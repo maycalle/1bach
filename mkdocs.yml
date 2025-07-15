@@ -59,7 +59,7 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-  logo: "images/logo.png"
+  logo: "img/logo.png"
   features:
     - header.autohide
     - navigation.top
