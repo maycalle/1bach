@@ -4,11 +4,11 @@ use_directory_urls: false
 
 # Menú de navegación (izquierda)
 nav:
-  - Introducción: index.md
+  - Presentación: index.md
   - Programación: 
     - Python:
-      - Primeros pasos: programacion_01.md
-      - Imprime, calcula y pregunta: programacion_02.md
+      - ¿Qué es Python y cómo empezar?: programacion_01.md
+      - Tipos de datos y conversión en Python: programacion_02.md
       - Tipos de datos basicos: programacion_03.md
       - Otros operadores y estructuras selectivas: programacion_04.md
       - Estructuras repetitivas: programacion_05.md
