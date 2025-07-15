@@ -1,4 +1,4 @@
-site_name: Programación, Redes y Sistemas Informáticos 1
+site_name: Programación, Redes y Sistemas Informáticos I
 site_url: https://maycalle.github.io/1bach
 use_directory_urls: false
 
@@ -8,7 +8,7 @@ nav:
   - Programación: 
     - Python:
       - Primeros pasos: programacion_01.md
-      - Imprime, calcula y pregunta: prgoramacion_02.md
+      - Imprime, calcula y pregunta: programacion_02.md
       - Tipos de datos basicos: programacion_03.md
       - Otros operadores y estructuras selectivas: programacion_04.md
       - Estructuras repetitivas: programacion_05.md
