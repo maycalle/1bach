@@ -26,9 +26,9 @@ nav:
       - Machine Learning y Deep Learning: programacionIA_02.md 
   - Sistemas informáticos:
     - Introducción: sistemas_01.md
-    - Componentes básicos: 
-    - Evolución histórica: 
-    - Características actuales: 
+    - Componentes básicos: sistemas_02.md
+    - Evolución histórica: sistemas_03.md
+    - Características actuales: sisiemas_04.md
   - Redes:
     - Introducción: redes_01.md
     - Tipos de redes: redes_02.md
