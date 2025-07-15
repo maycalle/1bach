@@ -1,0 +1,118 @@
+site_name: Contenidos de primero de bachillerato
+site_url: https://maycalle.github.io/1bach
+use_directory_urls: false
+
+# Menú de navegación (izquierda)
+nav:
+  - Introducción: index.md
+  - Programación: 
+    - Python:
+      - Primeros pasos: programacion_01.md
+      - Imprime, calcula y pregunta: prgoramacion_02.md
+      - Tipos de datos basicos: programacion_03.md
+      - Otros operadores y estructuras selectivas: programacion_04.md
+      - Estructuras repetitivas: programacion_05.md
+      - Listas: programacion_06.md
+      - Más sobre cadenas de texto: programacion_07.md
+      - Funciones: programacion_08.md
+    - PyGame Zero:
+      - Primeros pasos: pygame_01.md
+      - Eventos y controles: pygame_02.md
+      - Colisiones básicas: pygame_03.md
+      - Sonido, temporización y estados de juego: pygame_04.md
+      - Mecánicas de juego. Saltos y enemigos básicos: pygame_05.md
+    - Inteligencia Artificial:
+      - Introducción a la IA: programacionIA_01.md
+      - Machine Learning y Deep Learning: programacionIA_02.md 
+  - Sistemas informáticos:
+    - Introducción: sistemas_01.md
+    - Componentes básicos: 
+    - Evolución histórica: 
+    - Características actuales: 
+  - Redes:
+    - Introducción: redes_01.md
+    - Tipos de redes: redes_02.md
+    - Elementos físicos de una red: redes_03.md
+    - Fundamentos lógicos de las redes: redes_04.md
+    - Diseño y estructura lógica de una red local: redes_05.md
+  - Servicios en red: 
+
+# Tema CSS
+theme:
+  language: es
+  name: "material"
+  palette:
+    # Aquí se configuran los temas claro y oscuro, respectivamente
+    - scheme: default
+      primary: "blue"
+      accent: "yellow"
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Cambiar a modo noche
+    - scheme: slate 
+      primary: "blue"
+      accent: "yellow"
+      toggle:
+        icon: material/toggle-switch
+        name: Cambiar a modo día
+  font:
+    text: Roboto
+    code: Roboto Mono
+  logo: "images/logo.png"
+  features:
+    - header.autohide
+    - navigation.top
+    - navigation.tracking
+    - navigation.footer
+    - navigation.indexes
+    - content.code.annotate
+    - announce.dismiss
+    - toc.follow
+    - content.code.copy
+
+# CSS adicional
+extra_css:
+  - css/extra.css
+
+# Opciones adicionales de configuración
+extra:
+  consent:
+    title: Consentimiento de cookies
+    description: >-
+      Este sitio web utiliza cookies para ofrecerte una mejor experiencia. 
+      Al hacer clic en "Aceptar", aceptas el uso de cookies. 
+      También puedes configurar tus preferencias de cookies si lo prefieres.
+
+# Plugins adicionales
+plugins:
+  - search
+
+# Extensiones de Markdown habilitadas
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - meta
+  - pymdownx.details  
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.keys
+  # Uso correcto de listas (no embebidas en otros elementos)
+  - sane_lists
+  - toc:
+      permalink: true
+      toc_depth: 4
