@@ -35,7 +35,8 @@ nav:
     - Elementos físicos de una red: redes_03.md
     - Fundamentos lógicos de las redes: redes_04.md
     - Diseño y estructura lógica de una red local: redes_05.md
-  - Servicios en red: 
+  - Servicios en red:
+    - HTML: html_01.md 
 
 # Tema CSS
 theme:
