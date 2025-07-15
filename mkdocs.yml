@@ -59,7 +59,7 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-  logo: "img/logo.png"
+  logo: "img/logo_1bach.png"
   features:
     - header.autohide
     - navigation.top
