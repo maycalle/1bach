@@ -1,0 +1,2012 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://maycalle.github.io/1bach/pygame_05.html">
+      
+      
+        <link rel="prev" href="pygame_04.html">
+      
+      
+        <link rel="next" href="programacionIA_01.html">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Mecánicas de juego. Saltos y enemigos básicos - Contenidos de primero de bachillerato</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="css/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="yellow">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#5-mecanicas-de-juego-saltos-y-enemigos" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="index.html" title="Contenidos de primero de bachillerato" class="md-header__button md-logo" aria-label="Contenidos de primero de bachillerato" data-md-component="logo">
+      
+  <img src="images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Contenidos de primero de bachillerato
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Mecánicas de juego. Saltos y enemigos básicos
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="yellow"  aria-label="Cambiar a modo noche"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo noche" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="yellow"  aria-label="Cambiar a modo día"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo día" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Contenidos de primero de bachillerato" class="md-nav__button md-logo" aria-label="Contenidos de primero de bachillerato" data-md-component="logo">
+      
+  <img src="images/logo.png" alt="logo">
+
+    </a>
+    Contenidos de primero de bachillerato
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introducción
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Programación
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Programación
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Python
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_01.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Primeros pasos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="prgoramacion_02.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Imprime, calcula y pregunta
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_03.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tipos de datos basicos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_04.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Otros operadores y estructuras selectivas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_05.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Estructuras repetitivas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_06.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Listas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_07.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Más sobre cadenas de texto
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_08.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Funciones
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    PyGame Zero
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            PyGame Zero
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pygame_01.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Primeros pasos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pygame_02.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Eventos y controles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pygame_03.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Colisiones básicas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pygame_04.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sonido, temporización y estados de juego
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Mecánicas de juego. Saltos y enemigos básicos
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="pygame_05.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mecánicas de juego. Saltos y enemigos básicos
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#51-mecanica-de-saltos" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Mecánica de saltos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.1 Mecánica de saltos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#511-crear-un-personaje-que-pueda-saltar" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.1 Crear un personaje que pueda saltar
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#512-controlar-la-altura-del-salto-con-la-duracion-del-boton-presionado" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.2 Controlar la altura del salto con la duración del botón presionado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#513-implementar-un-limite-de-plataformas" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.3 Implementar un límite de plataformas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.1.3 Implementar un límite de plataformas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5131-crear-las-plataformas" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.3.1 Crear las plataformas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5132-detectar-colisiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.3.2 Detectar colisiones
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5133-mantener-la-logica-del-salto" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.3.3 Mantener la lógica del salto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5134-codigo-completo" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.3.4 Código completo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#52-introduccion-al-comportamiento-de-enemigos" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 Introducción al comportamiento de enemigos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.2 Introducción al comportamiento de enemigos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#521-movimiento-basico-de-enemigos-en-linea-recta" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.1 Movimiento básico de enemigos en línea recta
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Inteligencia Artificial
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Inteligencia Artificial
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacionIA_01.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introducción a la IA
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacionIA_02.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Machine Learning y Deep Learning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Sistemas informáticos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Sistemas informáticos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sistemas_01.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introducción
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sistemas_02.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Componentes básicos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sistemas_03.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Evolución histórica
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sisiemas_04.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Características actuales
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Redes
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Redes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="redes_01.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introducción
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="redes_02.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tipos de redes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="redes_03.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Elementos físicos de una red
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="redes_04.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Fundamentos lógicos de las redes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="redes_05.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Diseño y estructura lógica de una red local
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Servicios en red
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Servicios en red
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="html_01.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HTML
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#51-mecanica-de-saltos" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Mecánica de saltos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.1 Mecánica de saltos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#511-crear-un-personaje-que-pueda-saltar" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.1 Crear un personaje que pueda saltar
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#512-controlar-la-altura-del-salto-con-la-duracion-del-boton-presionado" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.2 Controlar la altura del salto con la duración del botón presionado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#513-implementar-un-limite-de-plataformas" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.3 Implementar un límite de plataformas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.1.3 Implementar un límite de plataformas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5131-crear-las-plataformas" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.3.1 Crear las plataformas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5132-detectar-colisiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.3.2 Detectar colisiones
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5133-mantener-la-logica-del-salto" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.3.3 Mantener la lógica del salto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5134-codigo-completo" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.3.4 Código completo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#52-introduccion-al-comportamiento-de-enemigos" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 Introducción al comportamiento de enemigos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.2 Introducción al comportamiento de enemigos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#521-movimiento-basico-de-enemigos-en-linea-recta" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.1 Movimiento básico de enemigos en línea recta
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="5-mecanicas-de-juego-saltos-y-enemigos">5. Mecanicas de juego: saltos y enemigos<a class="headerlink" href="#5-mecanicas-de-juego-saltos-y-enemigos" title="Permanent link">&para;</a></h1>
+<p>En esta unidad aprenderemos a implementar mecánicas básicas de juego relacionadas con saltos, plataformas, y enemigos. </p>
+<h2 id="51-mecanica-de-saltos">5.1 Mecánica de saltos<a class="headerlink" href="#51-mecanica-de-saltos" title="Permanent link">&para;</a></h2>
+<p>El salto es una de las mecánicas más comunes en los videojuegos. Para implementarlo necesitamos considerar:</p>
+<ul>
+<li>Un sistema de gravedad que tire del personaje hacia abajo.</li>
+<li>Una fuerza inicial que impulse al personaje hacia arriba.</li>
+<li>Condiciones que determinen cuándo el personaje puede aterrizar.</li>
+</ul>
+<h3 id="511-crear-un-personaje-que-pueda-saltar">5.1.1 Crear un personaje que pueda saltar<a class="headerlink" href="#511-crear-un-personaje-que-pueda-saltar" title="Permanent link">&para;</a></h3>
+<p>En este apartado, haremos que un personaje salte y aterrice correctamente. El objetivo es que cuando el jugador presione la tecla de salto (la que queramos), una fuerza inicial lo impulse hacia arriba. A continuación, la gravedad simulará la fuerza que tira del personaje hacia abajo, haciéndolo regresar al suelo y detenerse cuando aterrice.</p>
+<p>Para implementar esta mecánica, definiremos las siguientes variables:</p>
+<ul>
+<li><strong>GRAVEDAD:</strong><ul>
+<li>Representa la fuerza que tira del personaje hacia abajo.</li>
+<li>Este valor se suma a la velocidad vertical (<code>velocidad_y</code>) del personaje en cada fotograma si está en el aire.</li>
+</ul>
+</li>
+<li><strong>FUERZA_SALTO:</strong><ul>
+<li>Define la intensidad con la que el personaje es impulsado hacia arriba al saltar.</li>
+</ul>
+</li>
+<li><strong>en_el_suelo:</strong><ul>
+<li>Variable booleana que indica si el personaje está en contacto con el suelo.</li>
+<li>Si es <code>True</code>, el personaje está listo para saltar.</li>
+</ul>
+</li>
+</ul>
+<p>Y realizaremos los siguientes cambios en la lógica del juego en la <code>función update()</code>: </p>
+<ul>
+<li><strong>Gravedad:</strong><ul>
+<li>Si el personaje no está en el suelo (<code>en_el_suelo == False</code>), se le aplica la gravedad aumentando su velocidad vertical (<code>velocidad_y</code>).</li>
+</ul>
+</li>
+<li><strong>Movimiento vertical:</strong><ul>
+<li>El valor de <code>velocidad_y</code> se suma a la posición vertical del personaje (<code>jugador_y</code>), haciendo que suba o baje según corresponda.</li>
+</ul>
+</li>
+<li><strong>Colisión con el suelo:</strong><ul>
+<li>Si <code>jugador_y</code> alcanza el nivel del suelo (<code>HEIGHT - 80</code>), el personaje se detiene y su posición se ajusta para alinearse con el suelo.</li>
+</ul>
+</li>
+<li><strong>Reinicio de variables:</strong><ul>
+<li>Al aterrizar, se establece <code>en_el_suelo = True</code> para indicar que el personaje puede volver a saltar.</li>
+<li>La velocidad vertical (<code>velocidad_y</code>) se reinicia a 0.</li>
+</ul>
+</li>
+</ul>
+<p>A continuación, se indica el código que implementa el salto:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pgzrun</span>
+
+<span class="c1"># Configuración inicial</span>
+<span class="n">WIDTH</span> <span class="o">=</span> <span class="mi">800</span>
+<span class="n">HEIGHT</span> <span class="o">=</span> <span class="mi">600</span>
+<span class="n">GRAVEDAD</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">FUERZA_SALTO</span> <span class="o">=</span> <span class="mi">15</span>
+
+<span class="c1"># Posición y velocidad inicial del jugador</span>
+<span class="n">jugador_x</span> <span class="o">=</span> <span class="mi">400</span>
+<span class="n">jugador_y</span> <span class="o">=</span> <span class="mi">500</span>
+<span class="n">velocidad_y</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c1"># Estado del salto</span>
+<span class="n">en_el_suelo</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">draw</span><span class="p">():</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="s1">&#39;lightblue&#39;</span><span class="p">)</span>
+    <span class="c1"># El suelo es un rectángulo que ocupa todo el ancho de la pantalla y está ubicado 50 píxeles por encima del borde inferior.</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">filled_rect</span><span class="p">(</span><span class="n">Rect</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="n">HEIGHT</span> <span class="o">-</span> <span class="mi">50</span><span class="p">),</span> <span class="p">(</span><span class="n">WIDTH</span><span class="p">,</span> <span class="mi">50</span><span class="p">)),</span> <span class="s1">&#39;green&#39;</span><span class="p">)</span>  <span class="c1"># Suelo</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">((</span><span class="n">jugador_x</span><span class="p">,</span> <span class="n">jugador_y</span><span class="p">),</span> <span class="mi">30</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">)</span>  <span class="c1"># Personaje</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">update</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">jugador_y</span><span class="p">,</span> <span class="n">velocidad_y</span><span class="p">,</span> <span class="n">en_el_suelo</span>
+
+    <span class="c1"># Aplicar gravedad si el personaje no está en el suelo</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">en_el_suelo</span><span class="p">:</span>
+        <span class="n">velocidad_y</span> <span class="o">+=</span> <span class="n">GRAVEDAD</span>
+
+    <span class="c1"># Actualizar la posición vertical del jugador</span>
+    <span class="n">jugador_y</span> <span class="o">+=</span> <span class="n">velocidad_y</span>
+
+    <span class="c1"># Verificar colisión con el suelo</span>
+    <span class="k">if</span> <span class="n">jugador_y</span> <span class="o">&gt;=</span> <span class="n">HEIGHT</span> <span class="o">-</span> <span class="mi">80</span><span class="p">:</span>
+        <span class="n">jugador_y</span> <span class="o">=</span> <span class="n">HEIGHT</span> <span class="o">-</span> <span class="mi">80</span>
+        <span class="n">en_el_suelo</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">velocidad_y</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">on_key_down</span><span class="p">(</span><span class="n">key</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">velocidad_y</span><span class="p">,</span> <span class="n">en_el_suelo</span>
+    <span class="k">if</span> <span class="n">key</span> <span class="o">==</span> <span class="n">keys</span><span class="o">.</span><span class="n">SPACE</span> <span class="ow">and</span> <span class="n">en_el_suelo</span><span class="p">:</span>  <span class="c1"># Salta con espacio</span>
+        <span class="n">velocidad_y</span> <span class="o">=</span> <span class="o">-</span><span class="n">FUERZA_SALTO</span>
+        <span class="n">en_el_suelo</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="n">pgzrun</span><span class="o">.</span><span class="n">go</span><span class="p">()</span>
+</code></pre></div>
+<blockquote>
+<p><strong>Ejercicio 1.</strong> Modifica el código para que el personaje salte más alto al presionar la tecla Shift (<code>keys.LSHIFT</code>) en lugar de la barra espaciadora.</p>
+</blockquote>
+<h3 id="512-controlar-la-altura-del-salto-con-la-duracion-del-boton-presionado">5.1.2 Controlar la altura del salto con la duración del botón presionado<a class="headerlink" href="#512-controlar-la-altura-del-salto-con-la-duracion-del-boton-presionado" title="Permanent link">&para;</a></h3>
+<p>¡Vamos a mejorar la mecánica del salto! Añadiremos una mecánica que permita controlar la altura del salto según el tiempo que se mantenga presionada la tecla. Este ajuste hará que el salto sea más dinámico y realista.</p>
+<ul>
+<li><strong>Salto bajo:</strong> si el jugador presiona brevemente la tecla de salto.</li>
+<li><strong>Salto alto:</strong> si el jugador la mantiene presionada más tiempo, hasta una altura máxima.</li>
+</ul>
+<p>Para lograrlo, necesitamos introducir los siguientes cambios:</p>
+<ul>
+<li><strong>Nueva variable <code>salto_duracion</code></strong>:<ul>
+<li>Acumula el tiempo durante el cual el botón de salto está presionado.</li>
+<li>Se reinicia a 0 cuando el personaje aterriza.</li>
+</ul>
+</li>
+<li><strong>Fuerza de salto variable:</strong><ul>
+<li>Se modifica <code>FUERZA_SALTO</code> a <code>FUERZA_SALTO_MAX</code> para definir una fuerza máxima.</li>
+<li>La fuerza inicial depende de la duración del botón presionado.</li>
+</ul>
+</li>
+<li><strong>Ajustes en on_key_down y on_key_up</strong>:<ul>
+<li>Cuando el jugador presiona la tecla de salto (<em>on_key_down</em>), el personaje inicia el salto con la fuerza máxima.</li>
+<li>Cuando el jugador suelta la tecla (<em>on_key_up</em>), la velocidad hacia arriba se detiene, reduciendo la altura del salto.</li>
+</ul>
+</li>
+<li><strong>Lógica de gravedad sin cambios</strong>:<ul>
+<li>La gravedad continúa actuando sobre el personaje si no está en el suelo, simulando una caída natural.</li>
+</ul>
+</li>
+</ul>
+<p>A continuación, se muestra el código actualizado:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pgzrun</span>
+
+<span class="c1"># Configuración inicial</span>
+<span class="n">WIDTH</span> <span class="o">=</span> <span class="mi">800</span>
+<span class="n">HEIGHT</span> <span class="o">=</span> <span class="mi">600</span>
+<span class="n">GRAVEDAD</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">FUERZA_SALTO_MAX</span> <span class="o">=</span> <span class="mi">15</span>
+
+<span class="c1"># Posición y velocidad inicial del jugador</span>
+<span class="n">jugador_x</span> <span class="o">=</span> <span class="mi">400</span>
+<span class="n">jugador_y</span> <span class="o">=</span> <span class="mi">500</span>
+<span class="n">velocidad_y</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c1"># Estado del salto</span>
+<span class="n">en_el_suelo</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">salto_duracion</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">draw</span><span class="p">():</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="s1">&#39;lightblue&#39;</span><span class="p">)</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">filled_rect</span><span class="p">(</span><span class="n">Rect</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="n">HEIGHT</span> <span class="o">-</span> <span class="mi">50</span><span class="p">),</span> <span class="p">(</span><span class="n">WIDTH</span><span class="p">,</span> <span class="mi">50</span><span class="p">)),</span> <span class="s1">&#39;green&#39;</span><span class="p">)</span>  <span class="c1"># Suelo</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">((</span><span class="n">jugador_x</span><span class="p">,</span> <span class="n">jugador_y</span><span class="p">),</span> <span class="mi">30</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">)</span>  <span class="c1"># Personaje</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">update</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">jugador_y</span><span class="p">,</span> <span class="n">velocidad_y</span><span class="p">,</span> <span class="n">en_el_suelo</span><span class="p">,</span> <span class="n">salto_duracion</span>
+
+    <span class="c1"># Aplicar gravedad si el personaje no está en el suelo</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">en_el_suelo</span><span class="p">:</span>
+        <span class="n">velocidad_y</span> <span class="o">+=</span> <span class="n">GRAVEDAD</span>
+
+    <span class="c1"># Actualizar la posición vertical del jugador</span>
+    <span class="n">jugador_y</span> <span class="o">+=</span> <span class="n">velocidad_y</span>
+
+    <span class="c1"># Verificar colisión con el suelo</span>
+    <span class="k">if</span> <span class="n">jugador_y</span> <span class="o">&gt;=</span> <span class="n">HEIGHT</span> <span class="o">-</span> <span class="mi">80</span><span class="p">:</span>
+        <span class="n">jugador_y</span> <span class="o">=</span> <span class="n">HEIGHT</span> <span class="o">-</span> <span class="mi">80</span>
+        <span class="n">en_el_suelo</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">velocidad_y</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">salto_duracion</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># Reiniciar duración del salto al aterrizar</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">on_key_down</span><span class="p">(</span><span class="n">key</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">velocidad_y</span><span class="p">,</span> <span class="n">en_el_suelo</span><span class="p">,</span> <span class="n">salto_duracion</span>
+    <span class="k">if</span> <span class="n">key</span> <span class="o">==</span> <span class="n">keys</span><span class="o">.</span><span class="n">SPACE</span> <span class="ow">and</span> <span class="n">en_el_suelo</span><span class="p">:</span>  <span class="c1"># Comienza a saltar</span>
+        <span class="n">velocidad_y</span> <span class="o">=</span> <span class="o">-</span><span class="n">FUERZA_SALTO_MAX</span>
+        <span class="n">en_el_suelo</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">on_key_up</span><span class="p">(</span><span class="n">key</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">velocidad_y</span>
+    <span class="k">if</span> <span class="n">key</span> <span class="o">==</span> <span class="n">keys</span><span class="o">.</span><span class="n">SPACE</span> <span class="ow">and</span> <span class="n">velocidad_y</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># Reduce la altura si se suelta pronto</span>
+        <span class="n">velocidad_y</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">pgzrun</span><span class="o">.</span><span class="n">go</span><span class="p">()</span>
+</code></pre></div>
+<blockquote>
+<p><strong>Ejercicio 2.</strong> Modifica el código en <em>on_key_down</em> para que el jugador pueda realizar diferentes tipos de salto dependiendo de la tecla que presione. Por ejemplo:
+* <strong>Salto bajo:</strong> Si presiona la tecla W.
+* <strong>Salto alto:</strong> Si presiona la tecla SPACE.</p>
+<p><strong>Pista:</strong> puedes añadir una nueva fuerza de salto, llamada FUERZA_SALTO_BAJO, con un valor más pequeño que FUERZA_SALTO_MAX, y usar una condición <code>if</code> en <code>on_key_down</code> para verificar qué tecla se presiona.</p>
+</blockquote>
+<h3 id="513-implementar-un-limite-de-plataformas">5.1.3 Implementar un límite de plataformas<a class="headerlink" href="#513-implementar-un-limite-de-plataformas" title="Permanent link">&para;</a></h3>
+<p>¡Es hora de subir el nivel! Vamos a añadir plataformas al juego y haremos que nuestro personaje pueda aterrizar en ellas. Esto significa que el personaje tendrá que "atinar" bien sus saltos para caer sobre estas superficies, ¡como en los clásicos juegos de plataformas!</p>
+<p>Lo que haremos:
+* Crear plataformas que actúen como puntos de apoyo.
+* Detectar colisiones entre el personaje y las plataformas.
+* Ajustar la posición del personaje para que pueda aterrizar de forma precisa sobre ellas.</p>
+<h4 id="5131-crear-las-plataformas">5.1.3.1 Crear las plataformas<a class="headerlink" href="#5131-crear-las-plataformas" title="Permanent link">&para;</a></h4>
+<p>Las plataformas son rectángulos (Rect) que definimos con una posición y un tamaño. Estas estructuras incluyen propiedades útiles, como <code>.top</code>, que nos ayudarán acceder fácilmente a distintas partes del rectángulo sin necesidad de cálculos adicionales.</p>
+<p>En el código, las plataformas están organizadas en una lista para trabajar con ellas de manera sencilla:</p>
+<div class="highlight"><pre><span></span><code><span class="n">plataformas</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">Rect</span><span class="p">((</span><span class="mi">200</span><span class="p">,</span> <span class="mi">500</span><span class="p">),</span> <span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="mi">20</span><span class="p">)),</span>  <span class="c1"># Plataforma baja</span>
+    <span class="n">Rect</span><span class="p">((</span><span class="mi">400</span><span class="p">,</span> <span class="mi">400</span><span class="p">),</span> <span class="p">(</span><span class="mi">150</span><span class="p">,</span> <span class="mi">20</span><span class="p">)),</span>  <span class="c1"># Plataforma media</span>
+    <span class="n">Rect</span><span class="p">((</span><span class="mi">600</span><span class="p">,</span> <span class="mi">300</span><span class="p">),</span> <span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span>   <span class="c1"># Plataforma alta</span>
+<span class="p">]</span>
+</code></pre></div>
+<p>Para dibujarlas en la pantalla, usamos un bucle dentro de la función <strong>draw()</strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">plataforma</span> <span class="ow">in</span> <span class="n">plataformas</span><span class="p">:</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">filled_rect</span><span class="p">(</span><span class="n">plataforma</span><span class="p">,</span> <span class="s1">&#39;brown&#39;</span><span class="p">)</span>  <span class="c1"># Dibujar plataformas</span>
+</code></pre></div>
+<p>Ahora que ya tenemos las plataformas listas, el siguiente paso es detectar si el personaje aterriza correctamente sobre ellas.</p>
+<h4 id="5132-detectar-colisiones">5.1.3.2 Detectar colisiones<a class="headerlink" href="#5132-detectar-colisiones" title="Permanent link">&para;</a></h4>
+<p>Para que el personaje pueda aterrizar en una plataforma, necesitamos comprobar si su borde inferior (el círculo azul) está tocando el borde superior de alguna de las plataformas. Esto lo logramos en la función <code>update()</code> con este fragmento:</p>
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">plataforma</span> <span class="ow">in</span> <span class="n">plataformas</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">plataforma</span><span class="o">.</span><span class="n">collidepoint</span><span class="p">(</span><span class="n">jugador_x</span><span class="p">,</span> <span class="n">jugador_y</span> <span class="o">+</span> <span class="mi">30</span><span class="p">)</span> <span class="ow">and</span> <span class="n">velocidad_y</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">jugador_y</span> <span class="o">=</span> <span class="n">plataforma</span><span class="o">.</span><span class="n">top</span> <span class="o">-</span> <span class="mi">30</span>  <span class="c1"># Ajustar para que se apoye en la parte superior</span>
+        <span class="n">en_el_suelo</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">velocidad_y</span> <span class="o">=</span> <span class="mi">0</span>
+</code></pre></div>
+<p><strong>¿Qué hace este código?</strong></p>
+<ul>
+<li><strong>Recorre las plataformas:</strong> <ul>
+<li>El bucle permite analizar las colisiones con cada plataforma de forma independiente y comprobar si el jugador colisiona con alguna de ellas durante la caída del salto. </li>
+</ul>
+</li>
+<li><strong>Detecta las colisiones:</strong> <ul>
+<li>Se usa <code>collidepoint(jugador_x, jugador_y + 30)</code> para comprobar si el borde inferior del personaje <code>(jugador_x, jugador_y + 30)</code> está dentro del área de la plataforma actual. El cálculo <code>jugador_y + 30</code> representa el borde inferior de nuestro personaje (recuerda que nuestro personaje es un círculo de 30 pixeles de radio).</li>
+<li>La condición <code>velocidad_y &gt; 0</code> comprueba si el personaje está cayendo. Sin esta condición, el personaje podría detectar una colisión cuando está saltando hacia arriba, lo cual no tendría sentido.</li>
+</ul>
+</li>
+<li><strong>Ajusta la posición:</strong><ul>
+<li>Si hay una colisión, la posición vertical del personaje (<code>jugador_y</code>) se ajusta para que coincida con la parte superior de la plataforma (<code>plataforma.top</code>). La operación <code>plataforma.top - 30</code> asegura que el borde inferior del círculo del personaje quede justo en la parte superior de la plataforma.</li>
+</ul>
+</li>
+<li><strong>Detiene la caída:</strong><ul>
+<li>Indicamos que el personaje está sobre una superficie (<code>en_el_suelo = True</code>), lo que le permitirá saltar de nuevo, y cambiamos la velocidad vertical en 0 (<code>velocidad_y=0</code>), para detener el movimiento hacia abajo del personaje tras aterrizar.</li>
+</ul>
+</li>
+</ul>
+<h4 id="5133-mantener-la-logica-del-salto">5.1.3.3 Mantener la lógica del salto<a class="headerlink" href="#5133-mantener-la-logica-del-salto" title="Permanent link">&para;</a></h4>
+<p>El salto sigue funcionando igual que antes, pero ahora incluye las plataformas como posibles puntos de apoyo. Si el personaje está "en el suelo" (ahora, incluyendo las plataformas), podrá saltar al presionar la tecla ESPACIO.</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">key</span> <span class="o">==</span> <span class="n">keys</span><span class="o">.</span><span class="n">SPACE</span> <span class="ow">and</span> <span class="n">en_el_suelo</span><span class="p">:</span>
+    <span class="n">velocidad_y</span> <span class="o">=</span> <span class="o">-</span><span class="n">FUERZA_SALTO</span>
+    <span class="n">en_el_suelo</span> <span class="o">=</span> <span class="kc">False</span>
+</code></pre></div>
+<p>La gravedad continúa funcionando para simular una caída natural cuando el personaje no está tocando ninguna superficie:</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="ow">not</span> <span class="n">en_el_suelo</span><span class="p">:</span>
+    <span class="n">velocidad_y</span> <span class="o">+=</span> <span class="n">GRAVEDAD</span>
+</code></pre></div>
+<h4 id="5134-codigo-completo">5.1.3.4 Código  completo<a class="headerlink" href="#5134-codigo-completo" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pgzrun</span>
+
+<span class="c1"># Configuración inicial</span>
+<span class="n">WIDTH</span> <span class="o">=</span> <span class="mi">800</span>
+<span class="n">HEIGHT</span> <span class="o">=</span> <span class="mi">600</span>
+<span class="n">GRAVEDAD</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">FUERZA_SALTO</span> <span class="o">=</span> <span class="mi">15</span>
+
+<span class="c1"># Posición y velocidad inicial del jugador</span>
+<span class="n">jugador_x</span> <span class="o">=</span> <span class="mi">400</span>
+<span class="n">jugador_y</span> <span class="o">=</span> <span class="mi">500</span>
+<span class="n">velocidad_y</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c1"># Estado del salto</span>
+<span class="n">en_el_suelo</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="c1"># Plataformas</span>
+<span class="n">plataformas</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">Rect</span><span class="p">((</span><span class="mi">200</span><span class="p">,</span> <span class="mi">500</span><span class="p">),</span> <span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="mi">20</span><span class="p">)),</span>  <span class="c1"># Plataforma baja</span>
+    <span class="n">Rect</span><span class="p">((</span><span class="mi">400</span><span class="p">,</span> <span class="mi">400</span><span class="p">),</span> <span class="p">(</span><span class="mi">150</span><span class="p">,</span> <span class="mi">20</span><span class="p">)),</span>  <span class="c1"># Plataforma media</span>
+    <span class="n">Rect</span><span class="p">((</span><span class="mi">600</span><span class="p">,</span> <span class="mi">300</span><span class="p">),</span> <span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span>   <span class="c1"># Plataforma alta</span>
+<span class="p">]</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">draw</span><span class="p">():</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="s1">&#39;lightblue&#39;</span><span class="p">)</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">filled_rect</span><span class="p">(</span><span class="n">Rect</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="n">HEIGHT</span> <span class="o">-</span> <span class="mi">50</span><span class="p">),</span> <span class="p">(</span><span class="n">WIDTH</span><span class="p">,</span> <span class="mi">50</span><span class="p">)),</span> <span class="s1">&#39;green&#39;</span><span class="p">)</span>  <span class="c1"># Suelo</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">((</span><span class="n">jugador_x</span><span class="p">,</span> <span class="n">jugador_y</span><span class="p">),</span> <span class="mi">30</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">)</span>  <span class="c1"># Personaje</span>
+    <span class="k">for</span> <span class="n">plataforma</span> <span class="ow">in</span> <span class="n">plataformas</span><span class="p">:</span>
+        <span class="n">screen</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">filled_rect</span><span class="p">(</span><span class="n">plataforma</span><span class="p">,</span> <span class="s1">&#39;brown&#39;</span><span class="p">)</span>  <span class="c1"># Dibujar plataformas</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">update</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">jugador_x</span><span class="p">,</span> <span class="n">jugador_y</span><span class="p">,</span> <span class="n">velocidad_y</span><span class="p">,</span> <span class="n">en_el_suelo</span>
+
+    <span class="c1"># Movimiento horizontal</span>
+    <span class="k">if</span> <span class="n">keyboard</span><span class="o">.</span><span class="n">left</span><span class="p">:</span>
+        <span class="n">jugador_x</span> <span class="o">-=</span> <span class="mi">5</span>
+    <span class="k">if</span> <span class="n">keyboard</span><span class="o">.</span><span class="n">right</span><span class="p">:</span>
+        <span class="n">jugador_x</span> <span class="o">+=</span> <span class="mi">5</span>
+
+    <span class="c1"># Aplicar gravedad si el personaje no está en el suelo</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">en_el_suelo</span><span class="p">:</span>
+        <span class="n">velocidad_y</span> <span class="o">+=</span> <span class="n">GRAVEDAD</span>
+
+    <span class="c1"># Actualizar la posición vertical del jugador</span>
+    <span class="n">jugador_y</span> <span class="o">+=</span> <span class="n">velocidad_y</span>
+    <span class="n">en_el_suelo</span> <span class="o">=</span> <span class="kc">False</span>  <span class="c1"># Asumir que el jugador está en el aire</span>
+
+    <span class="c1"># Verificar colisión con el suelo</span>
+    <span class="k">if</span> <span class="n">jugador_y</span> <span class="o">&gt;=</span> <span class="n">HEIGHT</span> <span class="o">-</span> <span class="mi">80</span><span class="p">:</span>
+        <span class="n">jugador_y</span> <span class="o">=</span> <span class="n">HEIGHT</span> <span class="o">-</span> <span class="mi">80</span>
+        <span class="n">en_el_suelo</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">velocidad_y</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="c1"># Verificar colisión con plataformas</span>
+    <span class="k">for</span> <span class="n">plataforma</span> <span class="ow">in</span> <span class="n">plataformas</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">plataforma</span><span class="o">.</span><span class="n">collidepoint</span><span class="p">(</span><span class="n">jugador_x</span><span class="p">,</span> <span class="n">jugador_y</span> <span class="o">+</span> <span class="mi">30</span><span class="p">)</span> <span class="ow">and</span> <span class="n">velocidad_y</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">jugador_y</span> <span class="o">=</span> <span class="n">plataforma</span><span class="o">.</span><span class="n">top</span> <span class="o">-</span> <span class="mi">30</span>
+            <span class="n">en_el_suelo</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="n">velocidad_y</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">on_key_down</span><span class="p">(</span><span class="n">key</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">velocidad_y</span><span class="p">,</span> <span class="n">en_el_suelo</span>
+    <span class="k">if</span> <span class="n">key</span> <span class="o">==</span> <span class="n">keys</span><span class="o">.</span><span class="n">SPACE</span> <span class="ow">and</span> <span class="n">en_el_suelo</span><span class="p">:</span>  <span class="c1"># Salta con espacio</span>
+        <span class="n">velocidad_y</span> <span class="o">=</span> <span class="o">-</span><span class="n">FUERZA_SALTO</span>
+        <span class="n">en_el_suelo</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="n">pgzrun</span><span class="o">.</span><span class="n">go</span><span class="p">()</span>
+</code></pre></div>
+<blockquote>
+<p><strong>Ejercicio 3:</strong> Modifica el código para añadir al menos dos plataformas nuevas. Usa diferentes posiciones y tamaños. Prueba a crea alguna plataforma en una posición elevada (por ejemplo, y = 100), que sea difícil de alcanzar en un salto normal, y ajusta la posición inicial del jugador (jugador_x, jugador_y) para que pueda intentar alcanzarla. </p>
+<p><strong>Ejercicio 4 (opcional):</strong> Modifica el código para que durante el salto, si el jugador presiona las flechas izquierda o derecha, el personaje también se mueva horizontalmente. Puedes hacerlo sumando o restando un valor fijo a jugador_x mientras el personaje está en el aire.
+</p>
+</blockquote>
+<h2 id="52-introduccion-al-comportamiento-de-enemigos">5.2 Introducción al comportamiento de enemigos<a class="headerlink" href="#52-introduccion-al-comportamiento-de-enemigos" title="Permanent link">&para;</a></h2>
+<p>En esta sección, aprenderemos a añadir enemigos al juego y a programar su movimiento. Los enemigos añadirán un elemento de desafío, ya que el jugador tendrá que evitarlos mientras avanza por el nivel. </p>
+<h3 id="521-movimiento-basico-de-enemigos-en-linea-recta">5.2.1 Movimiento básico de enemigos en línea recta<a class="headerlink" href="#521-movimiento-basico-de-enemigos-en-linea-recta" title="Permanent link">&para;</a></h3>
+<p>El primer paso es programar un enemigo que se mueva horizontalmente en línea recta, cambiando de dirección al llegar a los bordes de la pantalla.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Posición y velocidad del enemigo</span>
+<span class="n">enemigo_x</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">enemigo_y</span> <span class="o">=</span> <span class="mi">500</span>
+<span class="n">enemigo_velocidad</span> <span class="o">=</span> <span class="mi">3</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">draw</span><span class="p">():</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="s1">&#39;lightblue&#39;</span><span class="p">)</span>
+    <span class="c1"># Dibujar el enemigo</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">filled_circle</span><span class="p">((</span><span class="n">enemigo_x</span><span class="p">,</span> <span class="n">enemigo_y</span><span class="p">),</span> <span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;red&#39;</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">update</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">enemigo_x</span>
+
+    <span class="c1"># Movimiento horizontal</span>
+    <span class="n">enemigo_x</span> <span class="o">+=</span> <span class="n">enemigo_velocidad</span>
+
+    <span class="c1"># Cambiar dirección al llegar a los bordes</span>
+    <span class="k">if</span> <span class="n">enemigo_x</span> <span class="o">&gt;</span> <span class="n">WIDTH</span> <span class="ow">or</span> <span class="n">enemigo_x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">enemigo_velocidad</span> <span class="o">*=</span> <span class="o">-</span><span class="mi">1</span>
+</code></pre></div>
+<blockquote>
+<p><strong>Ejercicio 5:</strong> Modifica el código para añadir varios enemigos al juego. Personaliza la velocidad y dirección inicial de cada enemigo.</p>
+<p><strong>Ejercicio 6 (opcional):</strong> Modifica el código para detectar la colisión del personaje con el enemigo. Para hacerlo usa la fórmula de ladistancia entre dos puntos para verificar si el círculo del enemigo y el círculo del personaje se tocan. Por último, añade una variable vidas, que vaya dosminuyendo su valor con cada colisión. Al perder todas las vidas, muestra un mensaje de "Game Over".</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="pygame_04.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Sonido, temporización y estados de juego">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Sonido, temporización y estados de juego
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="programacionIA_01.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Introducción a la IA">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                Introducción a la IA
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+
+
+<h4>Consentimiento de cookies</h4>
+<p>Este sitio web utiliza cookies para ofrecerte una mejor experiencia.  Al hacer clic en "Aceptar", aceptas el uso de cookies.  También puedes configurar tus preferencias de cookies si lo prefieres.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+    
+      
+    
+    
+      
+    
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Aceptar</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Gestionar cookies</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": ["header.autohide", "navigation.top", "navigation.tracking", "navigation.footer", "navigation.indexes", "content.code.annotate", "announce.dismiss", "toc.follow", "content.code.copy"], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>

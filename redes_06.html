@@ -1,0 +1,1597 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://maycalle.github.io/1bach/redes_06.html">
+      
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Redes 06 - Contenidos de primero de bachillerato</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="css/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="yellow">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#21-protocolos-de-comunicacion-el-lenguaje-de-las-redes" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="index.html" title="Contenidos de primero de bachillerato" class="md-header__button md-logo" aria-label="Contenidos de primero de bachillerato" data-md-component="logo">
+      
+  <img src="images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Contenidos de primero de bachillerato
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Redes 06
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="yellow"  aria-label="Cambiar a modo noche"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo noche" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="yellow"  aria-label="Cambiar a modo día"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo día" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Contenidos de primero de bachillerato" class="md-nav__button md-logo" aria-label="Contenidos de primero de bachillerato" data-md-component="logo">
+      
+  <img src="images/logo.png" alt="logo">
+
+    </a>
+    Contenidos de primero de bachillerato
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introducción
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Programación
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Programación
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Python
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_01.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Primeros pasos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="prgoramacion_02.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Imprime, calcula y pregunta
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_03.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tipos de datos basicos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_04.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Otros operadores y estructuras selectivas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_05.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Estructuras repetitivas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_06.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Listas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_07.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Más sobre cadenas de texto
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_08.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Funciones
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    PyGame Zero
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            PyGame Zero
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pygame_01.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Primeros pasos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pygame_02.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Eventos y controles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pygame_03.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Colisiones básicas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pygame_04.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sonido, temporización y estados de juego
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pygame_05.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mecánicas de juego. Saltos y enemigos básicos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Inteligencia Artificial
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Inteligencia Artificial
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacionIA_01.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introducción a la IA
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacionIA_02.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Machine Learning y Deep Learning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Sistemas informáticos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Sistemas informáticos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sistemas_01.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introducción
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sistemas_02.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Componentes básicos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sistemas_03.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Evolución histórica
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sisiemas_04.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Características actuales
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Redes
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Redes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="redes_01.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introducción
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="redes_02.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tipos de redes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="redes_03.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Elementos físicos de una red
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="redes_04.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Fundamentos lógicos de las redes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="redes_05.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Diseño y estructura lógica de una red local
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Servicios en red
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Servicios en red
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="html_01.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HTML
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#21-protocolos-de-comunicacion-el-lenguaje-de-las-redes" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Protocolos de comunicación: el lenguaje de las redes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1 Protocolos de comunicación: el lenguaje de las redes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#211-el-conjunto-de-protocolos-tcpip" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.1 El conjunto de protocolos TCP/IP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#212-otros-protocolos-esenciales" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.2 Otros protocolos esenciales
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1.2 Otros protocolos esenciales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dns-domain-name-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      DNS (Domain Name System)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#http-hypertext-transfer-protocol-y-https-hypertext-transfer-protocol-secure" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTTP (HyperText Transfer Protocol) y HTTPS (HyperText Transfer Protocol Secure)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ftp-file-transfer-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      FTP (File Transfer Protocol)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protocolos-de-correo-electronico-smtpimappop3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protocolos de correo electrónico: SMTP/IMAP/POP3
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-direcciones-ip-y-mac-concepto-y-utilidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Direcciones IP y MAC: concepto y utilidad
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2 Direcciones IP y MAC: concepto y utilidad">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#213-parametros-de-calidad-en-redes-ancho-de-banda-latencia-y-otros-parametros-de-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.3 Parámetros de calidad en redes: ancho de banda, latencia y otros parámetros de red.
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analisis-y-configuracion-de-redes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Análisis y configuración de redes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Análisis y configuración de redes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-herramientas-de-analisis-de-redes" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 Herramientas de análisis de redes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-introduccion-a-la-seguridad-en-las-redes" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 Introducción a la seguridad en las redes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-configuracion-basica-de-una-red-en-packet-tracer" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 Configuración básica de una red en Packet Tracer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h2 id="21-protocolos-de-comunicacion-el-lenguaje-de-las-redes">2.1 Protocolos de comunicación: el lenguaje de las redes<a class="headerlink" href="#21-protocolos-de-comunicacion-el-lenguaje-de-las-redes" title="Permanent link">&para;</a></h2>
+<p>Los protocolos de comunicación son conjuntos de reglas que permiten la transferencia de datos entre dispositivos en una red. Sin estos protocolos, la comunicación en Internet y en las redes informáticas no sería posible.</p>
+<h3 id="211-el-conjunto-de-protocolos-tcpip">2.1.1 El conjunto de protocolos TCP/IP<a class="headerlink" href="#211-el-conjunto-de-protocolos-tcpip" title="Permanent link">&para;</a></h3>
+<p>TCP/IP es el estándar global en redes, y cada vez que usas Internet, estás utilizando TCP/IP.</p>
+<ul>
+<li><strong>TCP (<em>Transmission Control Protocol</em>):</strong> se encarga de dividir los datos en paquetes, asegurar de que lleguen sin errores y en el orden correcto.</li>
+<li><strong>IP (<em>Internet Protocol</em>):</strong> se ocupa de enrutar esos paquetes para que lleguen a la dirección correcta.</li>
+</ul>
+<p>Cuando envías un mensaje en WhatsApp, TCP divide el mensaje en fragmentos (paquetes) y los envía con la dirección IP del destinatario. Al llegar, TCP los reconstruye en el mensaje original.</p>
+<h3 id="212-otros-protocolos-esenciales">2.1.2 Otros protocolos esenciales<a class="headerlink" href="#212-otros-protocolos-esenciales" title="Permanent link">&para;</a></h3>
+<p>Además de TCP/IP, existen otros protocolos fundamentales en el funcionamiento de Internet:</p>
+<h4 id="dns-domain-name-system">DNS (<em>Domain Name System</em>)<a class="headerlink" href="#dns-domain-name-system" title="Permanent link">&para;</a></h4>
+<p>El DNS es el protocolo que traduce nombres de dominio como <em>www.google.com</em> en direcciones IP numéricas, permitiendo que los navegadores localicen los servidores donde están alojadas las páginas web. Realmente se trata de una base de datos distribuida. Por ejemplo, cuando escribes www.wikipedia.org en tu navegador, el DNS traduce este nombre en una dirección IP específica (por ejemplo, 198.35.26.96), permitiendo que accedas al sitio web.</p>
+<h4 id="http-hypertext-transfer-protocol-y-https-hypertext-transfer-protocol-secure">HTTP  (<em>HyperText Transfer Protocol</em>) y HTTPS (HyperText Transfer Protocol Secure)<a class="headerlink" href="#http-hypertext-transfer-protocol-y-https-hypertext-transfer-protocol-secure" title="Permanent link">&para;</a></h4>
+<p>Ambos protocolos permiten la navegación en la web, pero existen diferencias importantes en seguridad.</p>
+<ul>
+<li>
+<p><strong>HTTP</strong> </p>
+<ul>
+<li>Es el protocolo estándar para la transferencia de información en la web. </li>
+<li>No cifra los datos, por lo que cualquier persona que intercepte la comunicación puede ver la información transmitida. </li>
+<li>Si inicias sesión en una página que usa HTTP, alguien en la misma red WiFi pública podría capturar tu contraseña y leerla sin dificultad.</li>
+</ul>
+</li>
+<li>
+<p><strong>HTTPS</strong> </p>
+<ul>
+<li>Versión más segura de HTTP, ya que usa cifrado SSL/TLS para proteger la información. </li>
+<li>Un sitio web usa HTTPS si en la barra de direcciones aparece un candado 🔒.</li>
+</ul>
+</li>
+<li>
+<p><strong>Cifrado SSL/TLS: ¿cómo protege los datos?</strong></p>
+<ul>
+<li>El cifrado SSL/TLS convierte los datos en un código incomprensible para quien no tenga la clave adecuada. Su funcionamiento básico es el siguiente: <ul>
+<li>Tu navegador y el servidor acuerdan una clave secreta (handshake o apretón de manos).</li>
+<li>A partir de ese momento, toda la información se cifra antes de enviarse.</li>
+<li>Si un atacante intercepta los datos, solo verá un conjunto de caracteres sin sentido.</li>
+</ul>
+</li>
+<li>Es como enviar una carta dentro de una caja con candado. Solo el destinatario tiene la llave para abrirla y leer el mensaje. </li>
+</ul>
+</li>
+</ul>
+<h4 id="ftp-file-transfer-protocol">FTP (<em>File Transfer Protocol</em>)<a class="headerlink" href="#ftp-file-transfer-protocol" title="Permanent link">&para;</a></h4>
+<p>FTP es un protocolo que permite la transferencia de archivos entre un cliente (ordenador) y un servidor a través de una red, ya sea una red local o Internet. Imagina que estás diseñando una página web. Una vez terminada en tu computadora, necesitas subir los archivos al servidor donde estará publicada. Para esto, usas un programa FTP como FileZilla y envías los archivos al servidor.</p>
+<h4 id="protocolos-de-correo-electronico-smtpimappop3">Protocolos de correo electrónico: SMTP/IMAP/POP3<a class="headerlink" href="#protocolos-de-correo-electronico-smtpimappop3" title="Permanent link">&para;</a></h4>
+<p>Son protocolos utilizados en el envío y recepción de correos electrónicos desde el remitente hasta el destinatario. 
+- <strong>SMTP (<em>Simple Mail Transfer Protocol</em>):</strong> para enviar correos. Por ejemplo, cuando envías un correo desde Gmail, tu mensaje viaja a través del servidor SMTP de Google antes de llegar al destinatario.
+- <strong>IMAP (<em>Internet Message Access Protocol</em>):</strong> permite acceder al correo electrónico directamente desde el servidor sin necesidad de descargar los mensajes. Si usas tu correo en el móvil y la computadora, IMAP sincroniza los mensajes para que puedas acceder a ellos desde cualquier dispositivo. Su principal ventaja es que no ocupa espacio en el dispositivo, ya que los correos permanecen en el servidor.
+- <strong>POP3 (<em>Post Office Protocol v3</em>):</strong> descarga los correos en un dispositivo y, por defecto, los borra del servidor después de descargarlos. Si configuras tu correo en Outlook con POP3, los mensajes se almacenan en tu computadora, pero si accedes desde otro dispositivo, no los verás. Su principal ventaja es que permite acceder a los correos sin necesidad de estar conectado a Internet.</p>
+<h2 id="22-direcciones-ip-y-mac-concepto-y-utilidad">2.2 Direcciones IP y MAC: concepto y utilidad<a class="headerlink" href="#22-direcciones-ip-y-mac-concepto-y-utilidad" title="Permanent link">&para;</a></h2>
+<p>Para que los dispositivos puedan comunicarse en una red, necesitan identificarse correctamente. Para ello, utilizan dos tipos de direcciones:
+- Dirección IP: identifica un dispositivo dentro de una red y le permite conectarse a Internet.
+- Dirección MAC: es un identificador único que distingue físicamente a cada dispositivo.</p>
+<p><strong>Dirección IP: el domicilio de tu dispositivo</strong>
+La dirección IP <em>(Internet Protocol)</em> es el identificador lógico que se asigna a cada dispositivo en una red. Funciona como la dirección de tu casa: si alguien quiere enviarte información en Internet, necesita saber dónde encontrarte. </p>
+<ul>
+<li>IPv4 (32 bits): formato clásico con números como 192.168.1.1. Limitado a unos 4,3 mil millones de direcciones.</li>
+<li>IPv6 (128 bits): nuevo estándar con muchas más combinaciones (2001:db8::ff00:42:8329).</li>
+</ul>
+<p>📌 Ejemplo: Tu router tiene una dirección IP asignada por el proveedor de Internet, y dentro de tu casa, cada dispositivo (móvil, laptop, consola) recibe una dirección IP interna.</p>
+<p><strong>Dirección MAC: la huella digital de tu dispositivo</strong>
+- Cada tarjeta de red tiene una dirección MAC <em>(Media Access Control)</em> única, establecida por el fabricante.
+- Está formada por 6 pares de caracteres hexadecimales (ejemplo: 00:1A:2B:3C:4D:5E).
+- No cambia, a diferencia de la IP, que puede ser dinámica.</p>
+<p>📌 Diferencia clave:
+- La dirección IP es como la dirección de tu casa (cambia si te mudas).
+- La dirección MAC es como tu huella dactilar (única e inalterable).</p>
+<h3 id="213-parametros-de-calidad-en-redes-ancho-de-banda-latencia-y-otros-parametros-de-red">2.1.3 Parámetros de calidad en redes: ancho de banda, latencia y otros parámetros de red.<a class="headerlink" href="#213-parametros-de-calidad-en-redes-ancho-de-banda-latencia-y-otros-parametros-de-red" title="Permanent link">&para;</a></h3>
+<p>Cuando usamos Internet, no solo importa que estemos conectados, sino cómo de buena es esa conexión. Aquí entran en juego varios factores clave:</p>
+<p><strong>Ancho de Banda: la cantidad de datos que pueden viajar</strong>
+- Se mide en Mbps (megabits por segundo) o Gbps (gigabits por segundo).
+- Cuanto mayor sea, más rápido podremos descargar y cargar información.</p>
+<p>📌 Ejemplo:
+- Una videollamada en HD necesita al menos 5 Mbps de ancho de banda.
+- Ver Netflix en 4K puede requerir 25 Mbps o más.</p>
+<p><strong>Latencia: el tiempo de respuesta de la red</strong>
+- Se mide en milisegundos (ms) y representa el tiempo que tarda un paquete en viajar de origen a destino.
+- Cuanto menor sea la latencia, más rápida será la comunicación.</p>
+<p>📌 Ejemplo:
+- Un videojuego en línea necesita baja latencia (&lt;50 ms) para evitar retrasos.
+- En una videollamada, una alta latencia (&gt;200 ms) hace que haya desfase en el audio y el video.</p>
+<p><strong>Jitter: la variación en la llegada de paquetes</strong>
+- Si los paquetes de datos llegan con diferencias de tiempo irregulares, se produce jitter.
+- Afecta especialmente a transmisiones en vivo y llamadas por Internet.</p>
+<p>📌 Ejemplo: Si una videollamada va a saltos o con cortes, el jitter puede ser el problema.</p>
+<p><strong>Pérdida de Paquetes: cuando la información no llega</strong>
+- Se expresa en porcentaje de paquetes perdidos.
+- Puede ser causada por congestión en la red, mala señal WiFi o errores en la conexión.</p>
+<p>📌 Ejemplo: En una partida online, si hay un 3-5% de pérdida de paquetes, el juego puede volverse injugable con personajes que "se teletransportan".</p>
+<h1 id="analisis-y-configuracion-de-redes">Análisis y configuración de redes<a class="headerlink" href="#analisis-y-configuracion-de-redes" title="Permanent link">&para;</a></h1>
+<h2 id="41-herramientas-de-analisis-de-redes">4.1 Herramientas de análisis de redes<a class="headerlink" href="#41-herramientas-de-analisis-de-redes" title="Permanent link">&para;</a></h2>
+<h2 id="42-introduccion-a-la-seguridad-en-las-redes">4.2 Introducción a la seguridad en las redes<a class="headerlink" href="#42-introduccion-a-la-seguridad-en-las-redes" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Amenazas básicas en redes (interceptación, suplantación, ataques de denegación de servicio)</li>
+<li>Concepto de firewall y VPN</li>
+</ul>
+<h2 id="43-configuracion-basica-de-una-red-en-packet-tracer">4.3 Configuración básica de una red en Packet Tracer<a class="headerlink" href="#43-configuracion-basica-de-una-red-en-packet-tracer" title="Permanent link">&para;</a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+
+
+<h4>Consentimiento de cookies</h4>
+<p>Este sitio web utiliza cookies para ofrecerte una mejor experiencia.  Al hacer clic en "Aceptar", aceptas el uso de cookies.  También puedes configurar tus preferencias de cookies si lo prefieres.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+    
+      
+    
+    
+      
+    
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Aceptar</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Gestionar cookies</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": ["header.autohide", "navigation.top", "navigation.tracking", "navigation.footer", "navigation.indexes", "content.code.annotate", "announce.dismiss", "toc.follow", "content.code.copy"], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>

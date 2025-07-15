@@ -1,0 +1,2042 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://maycalle.github.io/1bach/redes_05.html">
+      
+      
+        <link rel="prev" href="redes_04.html">
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Diseño y estructura lógica de una red local - Contenidos de primero de bachillerato</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="css/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="yellow">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#5-diseno-logico-y-segmentacion-de-una-red-local" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="index.html" title="Contenidos de primero de bachillerato" class="md-header__button md-logo" aria-label="Contenidos de primero de bachillerato" data-md-component="logo">
+      
+  <img src="images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Contenidos de primero de bachillerato
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Diseño y estructura lógica de una red local
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="yellow"  aria-label="Cambiar a modo noche"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo noche" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="yellow"  aria-label="Cambiar a modo día"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo día" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Contenidos de primero de bachillerato" class="md-nav__button md-logo" aria-label="Contenidos de primero de bachillerato" data-md-component="logo">
+      
+  <img src="images/logo.png" alt="logo">
+
+    </a>
+    Contenidos de primero de bachillerato
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introducción
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Programación
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Programación
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Python
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_01.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Primeros pasos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="prgoramacion_02.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Imprime, calcula y pregunta
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_03.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tipos de datos basicos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_04.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Otros operadores y estructuras selectivas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_05.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Estructuras repetitivas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_06.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Listas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_07.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Más sobre cadenas de texto
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_08.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Funciones
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    PyGame Zero
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            PyGame Zero
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pygame_01.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Primeros pasos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pygame_02.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Eventos y controles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pygame_03.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Colisiones básicas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pygame_04.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sonido, temporización y estados de juego
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pygame_05.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mecánicas de juego. Saltos y enemigos básicos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Inteligencia Artificial
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Inteligencia Artificial
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacionIA_01.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introducción a la IA
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacionIA_02.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Machine Learning y Deep Learning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Sistemas informáticos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Sistemas informáticos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sistemas_01.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introducción
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sistemas_02.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Componentes básicos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sistemas_03.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Evolución histórica
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sisiemas_04.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Características actuales
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Redes
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Redes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="redes_01.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introducción
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="redes_02.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tipos de redes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="redes_03.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Elementos físicos de una red
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="redes_04.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Fundamentos lógicos de las redes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Diseño y estructura lógica de una red local
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="redes_05.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Diseño y estructura lógica de una red local
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#51-que-es-el-diseno-logico-de-una-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 ¿Qué es el diseño lógico de una red?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.1 ¿Qué es el diseño lógico de una red?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#511-que-decisiones-se-toman-en-el-diseno-logico" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.1 ¿Qué decisiones se toman en el diseño lógico?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#512-ejemplo-simple-de-diseno-logico" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.2 Ejemplo simple de diseño lógico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#513-parametros-basicos-que-necesita-cada-dispostivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.3 Parámetros básicos que necesita cada dispostivo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#514-errores-comunes-en-una-red-mal-disenada" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.4 Errores comunes en una red mal diseñada
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#52-diseno-basico-de-una-red-sin-segmentacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 Diseño básico de una red sin segmentación
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.2 Diseño básico de una red sin segmentación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#521-elementos-comunes-en-una-red-local-simple" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.1 Elementos comunes en una red local simple
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#522-ejemplo-red-de-una-biblioteca-escolar" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.2 Ejemplo: red de una biblioteca escolar
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#523-limitaciones-de-no-segmentar" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.3 Limitaciones de no segmentar**
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#53-diseno-de-redes-con-subredes-subnetting" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3 Diseño de redes con subredes (subnetting)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.3 Diseño de redes con subredes (subnetting)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#531-que-es-el-subnetting" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3.1 ¿Qué es el subnetting?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.3.1 ¿Qué es el subnetting?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#por-que-dividir-una-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Por qué dividir una red?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#532-como-se-hace-el-subnetting" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3.2 ¿Cómo se hace el subnetting?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#54-subnetting-con-vlsm-mascara-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.4 Subnetting con VLSM (máscara variable)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.4 Subnetting con VLSM (máscara variable)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#541-ejemplo-con-vlsm" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.4.1 Ejemplo con VLSM
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Servicios en red
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Servicios en red
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="html_01.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HTML
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#51-que-es-el-diseno-logico-de-una-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 ¿Qué es el diseño lógico de una red?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.1 ¿Qué es el diseño lógico de una red?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#511-que-decisiones-se-toman-en-el-diseno-logico" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.1 ¿Qué decisiones se toman en el diseño lógico?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#512-ejemplo-simple-de-diseno-logico" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.2 Ejemplo simple de diseño lógico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#513-parametros-basicos-que-necesita-cada-dispostivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.3 Parámetros básicos que necesita cada dispostivo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#514-errores-comunes-en-una-red-mal-disenada" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.4 Errores comunes en una red mal diseñada
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#52-diseno-basico-de-una-red-sin-segmentacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 Diseño básico de una red sin segmentación
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.2 Diseño básico de una red sin segmentación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#521-elementos-comunes-en-una-red-local-simple" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.1 Elementos comunes en una red local simple
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#522-ejemplo-red-de-una-biblioteca-escolar" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.2 Ejemplo: red de una biblioteca escolar
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#523-limitaciones-de-no-segmentar" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.3 Limitaciones de no segmentar**
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#53-diseno-de-redes-con-subredes-subnetting" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3 Diseño de redes con subredes (subnetting)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.3 Diseño de redes con subredes (subnetting)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#531-que-es-el-subnetting" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3.1 ¿Qué es el subnetting?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.3.1 ¿Qué es el subnetting?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#por-que-dividir-una-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Por qué dividir una red?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#532-como-se-hace-el-subnetting" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3.2 ¿Cómo se hace el subnetting?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#54-subnetting-con-vlsm-mascara-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.4 Subnetting con VLSM (máscara variable)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.4 Subnetting con VLSM (máscara variable)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#541-ejemplo-con-vlsm" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.4.1 Ejemplo con VLSM
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="5-diseno-logico-y-segmentacion-de-una-red-local">5. Diseño lógico y segmentación de una red local<a class="headerlink" href="#5-diseno-logico-y-segmentacion-de-una-red-local" title="Permanent link">&para;</a></h1>
+<h2 id="51-que-es-el-diseno-logico-de-una-red">5.1 ¿Qué es el diseño lógico de una red?<a class="headerlink" href="#51-que-es-el-diseno-logico-de-una-red" title="Permanent link">&para;</a></h2>
+<p>El <strong>diseño lógico de una red local (LAN)</strong> es la <strong>planificación de cómo se organizan los dispositivos y cómo se comunican entre ellos</strong>, sin fijarnos en los cables o conexiones físicas..</p>
+<p>En otras palabras, es decidir  <strong>qué direcciones IP usará cada equipo, cómo saldrán a Internet y si la red se dividirá en grupos más pequeños</strong> (subredes).</p>
+<h3 id="511-que-decisiones-se-toman-en-el-diseno-logico">5.1.1 ¿Qué decisiones se toman en el diseño lógico?<a class="headerlink" href="#511-que-decisiones-se-toman-en-el-diseno-logico" title="Permanent link">&para;</a></h3>
+<p>Al diseñar una red, se deben planificar cosas como:
+- Qué direcciones IP usarán los dispositivos
+- Qué dispositivos habrá (ordenadores, impresoras, routers, etc.)
+- Si todos estarán en la misma red o en subredes separadas
+- Cómo saldrán a Internet (por qué puerta de enlace o router)
+- Qué dispositivos deben comunicarse entre sí, y cuáles conviene mantener separados (por ejemplo: separar el tráfico del personal del tráfico del alumnado)</p>
+<p>En este curso aprenderemos a hacer esa organización mediante segmentación, una forma sencilla y muy útil de dividir una red en partes más pequeñas.</p>
+<h3 id="512-ejemplo-simple-de-diseno-logico">5.1.2 Ejemplo simple de diseño lógico<a class="headerlink" href="#512-ejemplo-simple-de-diseno-logico" title="Permanent link">&para;</a></h3>
+<p>Imagina que queremos conectar los dispositivos de una oficina:
+- Red IP elegida: 192.168.10.0/24
+- Router (salida a Internet): 192.168.10.1
+- Impresora con IP fija: 192.168.10.10
+- Servidor de archivos con IP fija: 192.168.10.20
+- Ordenadores de los empleados: reciben IP automáticamente entre 192.168.10.100 y 192.168.10.200 (por DHCP)</p>
+<p>Todos están en la misma red y pueden comunicarse entre sí.</p>
+<h3 id="513-parametros-basicos-que-necesita-cada-dispostivo">5.1.3 Parámetros básicos que necesita cada dispostivo<a class="headerlink" href="#513-parametros-basicos-que-necesita-cada-dispostivo" title="Permanent link">&para;</a></h3>
+<p>Para que un dispositivo funcione bien en la red y tenga acceso a Internet, necesita:
+- <strong>Dirección IP:</strong> identifica de forma única al dispositivo. Ej: 192.168.1.10
+- <strong>Máscara de red:</strong> determina qué parte de la IP pertenece a la red y cuál al host. Ej: 255.255.255.0
+- <strong>Gateway:</strong> dirección del router que da acceso al exterior (Ej: 192.168.1.1)</p>
+<h3 id="514-errores-comunes-en-una-red-mal-disenada">5.1.4 Errores comunes en una red mal diseñada<a class="headerlink" href="#514-errores-comunes-en-una-red-mal-disenada" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>IP duplicada:</strong> dos dispositivos con la misma IP entran en conflicto → ninguno se conecta bien.</li>
+<li><strong>IP fuera del rango definido por la red y su máscara.:</strong> el dispositivo no podrá hablar con los demás ni con el router.</li>
+<li><strong>Máscara incorrecta:</strong> el equipo no sabrá quién está dentro de su red → no se comunica.</li>
+<li><strong>Falta de gateway:</strong> el dispositivo no podrá salir a Internet.</li>
+</ul>
+<h2 id="52-diseno-basico-de-una-red-sin-segmentacion">5.2 Diseño básico de una red sin segmentación<a class="headerlink" href="#52-diseno-basico-de-una-red-sin-segmentacion" title="Permanent link">&para;</a></h2>
+<p>Antes de aprender a dividir una red, es importante entender cómo se diseña una red sencilla, donde <strong>todos los dispositivos están conectados en el mismo grupo o segmento</strong>. Este tipo de red se utiliza habitualmente en hogares, aulas, pequeñas oficinas o laboratorios.</p>
+<h3 id="521-elementos-comunes-en-una-red-local-simple">5.2.1 Elementos comunes en una red local simple<a class="headerlink" href="#521-elementos-comunes-en-una-red-local-simple" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Router:</strong> proporciona acceso a Internet y actúa como puerta de enlace (gateway).</li>
+<li><strong>Switch:</strong> conecta los dispositivos entre sí (si la red es cableada).</li>
+<li><strong>Dispositivos finales:</strong> ordenadores, impresoras, cámaras, etc.</li>
+<li><strong>Asignación IP:</strong> puede hacerse manualmente o mediante DHCP.</li>
+</ul>
+<h3 id="522-ejemplo-red-de-una-biblioteca-escolar">5.2.2 Ejemplo: red de una biblioteca escolar<a class="headerlink" href="#522-ejemplo-red-de-una-biblioteca-escolar" title="Permanent link">&para;</a></h3>
+<p>Supongamos que se necesita conectar:
+- 1 router
+- 1 impresora de red
+- 6 ordenadores para usuarios
+- 2 ordenadores para el personal</p>
+<p>Se decide usar la red 192.168.10.0/24 (máscara: 255.255.255.0), sin segmentación, es decir, todos los dispositivos estarán en la misma red local.</p>
+<p><strong>Asignación IP sugerida</strong></p>
+<table>
+    <tr>
+        <th>Dispositivo</th>
+        <th>Dirección IP</th>
+    </tr>
+    <tr>
+        <td>Router</td>
+        <td>192.168.10.1</td>
+    </tr>
+    <tr>
+        <td>Impresora</td>
+        <td>192.168.10.10</td>
+    </tr>
+    <tr>
+        <td>PC1 (usuario)</td>
+        <td>192.168.10.20</td>
+    </tr>
+    <tr>
+        <td>PC2 (usuario)</td>
+        <td>192.168.10.21</td>
+    </tr>
+    <tr>
+        <td>PC3 (usuario)</td>
+        <td>192.168.10.22</td>
+    </tr>
+    <tr>
+        <td>PC4 (usuario)</td>
+        <td>192.168.10.23</td>
+    </tr>
+    <tr>
+        <td>PC5 (usuario)</td>
+        <td>192.168.10.24</td>
+    </tr>
+    <tr>
+        <td>PC6 (usuario)</td>
+        <td>192.168.10.25</td>
+    </tr>
+    <tr>
+        <td>PC1 (personal)</td>
+        <td>192.168.10.100</td>
+    </tr>
+    <tr>
+        <td>PC2 (personal)</td>
+        <td>192.168.10.101</td>
+    </tr>
+</table>
+
+<p>Todos los dispositivos usan:
+- Máscara: 255.255.255.0
+- Gateway: 192.168.10.1</p>
+<h3 id="523-limitaciones-de-no-segmentar">5.2.3 Limitaciones de no segmentar**<a class="headerlink" href="#523-limitaciones-de-no-segmentar" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Todo el tráfico circula por la misma red, lo que puede hacerla más lenta.</li>
+<li>No hay separación entre usuarios y personal, lo que puede afectar la seguridad.</li>
+<li>Administrar muchos dispositivos se vuelve complicado.</li>
+</ul>
+<p>Por eso, en redes medianas o grandes, es recomendable dividir la red en subredes, usando subnetting. </p>
+<h2 id="53-diseno-de-redes-con-subredes-subnetting">5.3 Diseño de redes con subredes (subnetting)<a class="headerlink" href="#53-diseno-de-redes-con-subredes-subnetting" title="Permanent link">&para;</a></h2>
+<h3 id="531-que-es-el-subnetting">5.3.1 ¿Qué es el subnetting?<a class="headerlink" href="#531-que-es-el-subnetting" title="Permanent link">&para;</a></h3>
+<p>El <strong>subnetting</strong> es una técnica que permite dividir una red grande en varias redes más pequeñas, llamadas subredes. Cada subred funciona de forma independiente dentro de la red general.</p>
+<h4 id="por-que-dividir-una-red">¿Por qué dividir una red?<a class="headerlink" href="#por-que-dividir-una-red" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Rendimiento:</strong> menos tráfico por subred.</li>
+<li><strong>Seguridad:</strong> se pueden aislar departamentos.</li>
+<li><strong>Organización:</strong> se gestionan mejor las IPs.</li>
+<li><strong>Eficiencia:</strong> se asignan solo las IPs necesarias a cada subred.</li>
+</ul>
+<h3 id="532-como-se-hace-el-subnetting">5.3.2 ¿Cómo se hace el subnetting?<a class="headerlink" href="#532-como-se-hace-el-subnetting" title="Permanent link">&para;</a></h3>
+<p>Partimos de una red inicial (por ejemplo, 192.168.1.0/24) y la queremos dividir en partes más pequeñas.</p>
+<p>Antes de comenzar, es importante entender algunos <strong>conceptos clave</strong>:
+- Cuando dividimos una red, tomamos bits del campo de host para crear más subredes. A estos bits se les llama <strong>"bits prestados"</strong>. Cuantos más bits prestemos, más subredes podemos crear, pero menos dispositivos podrá tener cada subred.
+- La <strong>notación CIDR (/n)</strong> indica cuántos bits están reservados para la parte de red. Por ejemplo, /24 significa que los primeros 24 bits de la IP pertenecen a la red, y el resto son para los hosts.
+- Para <strong>calcular subredes y hosts</strong>, usamos estas fórmulas:
+  - Nº de subredes = 2^n (donde n es el número de bits prestados)
+  - Nº de hosts por subred = 2^h - 2 (donde h es la cantidad de bits que quedan para los hosts)</p>
+<p>Una vez entendido esto, seguimos estos pasos:</p>
+<p><strong>Paso 1: Determina cuántas subredes necesitas</strong>
+- Supongamos que queremos crear 4 subredes. 
+- Usa la fórmula: Nº de subredes = 2^n,  para calcular cuántos bits necesito prestar (busca el valor de n que te permita alcanzar o superar la cantidad de subredes requeridas)
+- 2² = 4 → necesitas 2 bits prestados del campo de host.</p>
+<p><strong>Paso 2: Calcula el nuevo prefijo CIDR</strong>
+- Tu red original era /24. 
+- Si prestas 2 bits: 24 + 2 = /26
+- Esto significa que los primeros 26 bits ahora identifican la subred.</p>
+<p><strong>Paso 3: Calcula cuántos hosts puedes tener por subred</strong>
+- Con /26, quedan 6 bits para hosts
+- Nº de hosts = 2^6 - 2 = 62 hosts por subred
+(Se restan 2: una IP para red y otra para broadcast)</p>
+<p><strong>Paso 4: Divide la red en subredes</strong>
+- En /26, el bloque de IPs se mueve de 64 en 64 (porque 2⁶ = 64). </p>
+<p>Entonces las subredes serían:</p>
+<table>
+    <tr>
+        <th>Subred</th>        
+        <th>Dirección de red</th>
+        <th>Rango de IPs disponibles</th>
+        <th>Broadcast</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>192.168.1.0</td>
+        <td>192.168.1.1 - 192.168.1.62</td>        
+        <td>192.168.1.63</td>
+    </tr>
+     <tr>
+        <td>2</td>
+        <td>192.168.1.64</td>
+        <td>192.168.1.65 - 192.168.1.126</td>        
+        <td>192.168.1.127</td>
+    </tr>
+     <tr>
+        <td>3</td>
+        <td>192.168.1.128</td>
+        <td>192.168.1.129 - 192.168.1.190</td>        
+        <td>192.168.1.191</td>
+    </tr>
+     <tr>
+        <td>4</td>
+        <td>192.168.1.192</td>
+        <td>192.168.1.193 - 192.168.1.254</td>       
+        <td>192.168.1.255</td>
+    </tr>
+</table>
+
+<p>Cada subred tiene 62 IPs útiles.</p>
+<p>Como ves, el proceso de subnetting sigue una lógica clara: identificas cuántas subredes necesitas, prestas bits, y divides el espacio de direcciones de forma ordenada.</p>
+<blockquote>
+<p><strong>Ejercicio 1.</strong> Tienes la red 192.168.10.0/24 y necesitas dividirla en 8 subredes iguales.
+- ¿Cuántos bits debes tomar prestados del campo de host?
+- ¿Cuál será el nuevo prefijo CIDR?
+- ¿Cuántas direcciones IP podrá tener cada subred?
+- Enumera las 8 subredes indicando:
+  - Dirección de red
+  - Rango de IPs disponibles para hosts
+  - Dirección de broadcast </p>
+<p><strong>Ejercicio 2.</strong> La red base asignada a un campus educativo es 172.16.0.0/16. El campus tiene varios edificios y quiere crear 16 subredes iguales, una para cada área del centro. Divide la red usando subnetting clásico.</p>
+</blockquote>
+<h2 id="54-subnetting-con-vlsm-mascara-variable">5.4 Subnetting con VLSM (máscara variable)<a class="headerlink" href="#54-subnetting-con-vlsm-mascara-variable" title="Permanent link">&para;</a></h2>
+<p>Cuando usamos subnetting básico (como en el ejemplo anterior), dividimos la red en subredes del mismo tamaño. Esto a veces desperdicia direcciones IP, especialmente si algunos grupos necesitan pocas y otros muchas.</p>
+<p><strong>VLSM (Variable Length Subnet Masking)</strong> permite usar <strong>subredes de distintos tamaños</strong>, adaptadas a lo que necesita cada grupo.</p>
+<table>
+    <tr>
+        <th>Subnetting clásico (fijo)</th>
+        <th>VLSM (máscara variable)</th>
+    </tr>
+    <tr>
+        <td>Todas las subredes tienen el mismo tamaño</td>
+        <td>Cada subred puede tener el tamaño que necesite</td>
+    </tr>
+    <tr>
+        <td>Fácil de calcular</td>
+        <td>Requiere más planificación</td>
+    </tr>
+    <tr>
+        <td>Puede desperdiciar IPs</td>
+        <td>Ahorra espacio de direcciones</td>
+    </tr>
+    <tr>
+        <td>Buena para redes simples</td>
+        <td>Ideal para redes organizadas por grupos</td>
+    </tr>
+</table>
+
+<h3 id="541-ejemplo-con-vlsm">5.4.1 Ejemplo con VLSM<a class="headerlink" href="#541-ejemplo-con-vlsm" title="Permanent link">&para;</a></h3>
+<p>Queremos utilizar una dirección estándar de clase C, 192.168.5.0 /24, para crear cuatro subredes en una empresa, con 10, 25, 30 y 60 equipos respectivamente. Además, necesitamos interconectar tres routers entre sí. El esquema básico de conexiones es éste:</p>
+<div align="center">
+    <figure>
+        <img src="/primero-bach/img/ejemplo_vlsm.jpg" width="50%">        
+    </figure>
+</div>
+
+<p>Vemos en la imagen anterior que hay conexiones WAN. Una conexión WAN (Wide Area Network) se refiere a los enlaces punto a punto entre routers. Cada uno de estos enlaces necesita una subred propia, aunque solo va a conectar dos dispositivos (los routers en cada extremo).</p>
+<p>En este caso, la topología tiene 3 routers: R1, R2 y R3. Y están conectados de esta forma:
+- R1 se conecta a R3 (WAN1)
+- R2 se conecta a R3 (WAN2)</p>
+<p>Por tanto, necesitamos dos subredes WAN, una para cada conexión.</p>
+<p>Necesitaremos en total 6 subredes (cuatro para las cuatro LANs, y dos más para las dos conexiones entre routers). Lo que hacemos es ordenarlas de mayor a menor número de direcciones necesarias:</p>
+<ul>
+<li>
+<p>La red de mayor tamaño será la <strong>LAN1 (60 equipos)</strong>. Necesitaremos 6 bits para asignarles direcciones a todos (2^6 = 64 direcciones, menos la de red y broadcast, quedan 62 disponibles). Por lo tanto, usaremos 32 – 6 = 26 bits para la máscara. Usando la dirección base 192.168.5.0 /24, esta red quedaría así:
+        - Dirección de red: 192.168.5.0 /26
+        - Direcciones asignables: 192.168.5.1 hasta 192.168.5.62
+        - Dirección de broadcast: 192.168.5.63</p>
+</li>
+<li>
+<p>Pasamos a la siguiente red, que es la <strong>LAN2 (30 equipos)</strong>. Necesitaremos 5 bits para direccionarlos (2^5 – 2 = 30 direcciones justas), y por tanto usaremos 32 – 5 = 27 bits para la máscara, empezando por donde nos quedamos antes:
+        - Dirección de red: 192.168.5.64 /27
+        - Direcciones asignables: 192.168.5.65 hasta 192.168.5.94
+        - Dirección de broadcast: 192.168.5.95</p>
+</li>
+<li>
+<p>La siguiente es la <strong>LAN3 (25 equipos)</strong>. Volveremos a necesitar 5 bits, y usaremos 27 para la máscara. Continuamos asignando direcciones donde lo dejamos:
+        - Dirección de red: 192.168.5.96 /27
+        - Direcciones asignables: 192.168.5.97 hasta 192.168.5.126
+        - Dirección de broadcast: 192.168.5.127</p>
+</li>
+<li>
+<p>La siguiente es la <strong>LAN4 (10 equipos)</strong>. Para ellos necesitaremos 4 bits (2^4 - 2 = 14 direcciones disponibles), y usaremos 32 – 4 = 28 bits de máscara.
+        - Dirección de red: 192.168.5.128 /28
+        - Direcciones asignables: 192.168.5.129 a 192.168.5.142
+        - Dirección de broadcast: 192.168.5.143</p>
+</li>
+<li>
+<p>Nos quedan las <strong>conexiones WAN</strong>. En ambas necesitaremos dos direcciones (una para cada router conectado a la WAN), y por tanto harán falta 2 bits (2^2 - 2 = 2 direcciones justas). Usaremos 32 – 2 = 30 bits de máscara. Así, la <strong>primera WAN</strong> quedaría así:
+        - Dirección de red: 192.168.5.144 /30
+        - Direcciones asignables: 192.168.5.145 y 192.168.5.146
+        - Dirección de broadcast: 192.168.5.147</p>
+</li>
+<li>
+<p>Y la <strong>segunda WAN</strong> así:
+        - Dirección de red: 192.168.5.148 /30
+        - Direcciones asignables: 192.168.5.149 y 192.168.5.150
+        - Dirección de broadcast: 192.168.5.151</p>
+</li>
+</ul>
+<p><strong>Direcciones usadas:</strong>
+- /26: 64 direcciones
+- /27: 32 + 32 = 64 
+- /28: 16
+- /30: 4 + 4 = 8 
+Total utilizadas: 64 + 64 + 16 + 8 = 152 direcciones
+Disponibles en /24: 256 direcciones
+Aún quedan 104 direcciones disponible para crecimiento o más subredes. Aunque VLSM usa diferentes máscaras, todas las subredes creadas deben caber dentro del bloque principal (en este caso, un /24 = 256 direcciones).</p>
+<blockquote>
+<p><strong>Ejercicio 3.</strong>  Repite los pasos vistos en la técnica de subredes con VLSM para una empresa que necesite crear 3 subredes de 15, 30 y 80 equipos, conectadas todas al mismo router</p>
+<p><strong>Ejercicio 4.</strong> Repite los pasos para otra empresa con el siguiente diseño de red:</p>
+</blockquote>
+<div align="center">
+    <figure>
+        <img src="/primero-bach/img/ejercicio_vlsm.jpg" width="50%">        
+    </figure>
+</div>
+
+<blockquote>
+<p><strong>Ejercicio 5.</strong> Queremos utilizar una dirección IP de clase C, 192.168.5.0/24, para crear cuatro subredes dentro de una empresa, que albergarán 10, 25, 55 y 70 equipos, respectivamente. Todas las subredes estarán conectadas a un mismo router. Utiliza la técnica de subnetting con longitud de máscara variable (VLSM) para diseñar la configuración de las subredes. Para cada subred, debes indicar: la dirección de red, la máscara de subred, el rango de direcciones IP válidas para hosts y la dirección de broadcast.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="redes_04.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Fundamentos lógicos de las redes">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Fundamentos lógicos de las redes
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+
+
+<h4>Consentimiento de cookies</h4>
+<p>Este sitio web utiliza cookies para ofrecerte una mejor experiencia.  Al hacer clic en "Aceptar", aceptas el uso de cookies.  También puedes configurar tus preferencias de cookies si lo prefieres.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+    
+      
+    
+    
+      
+    
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Aceptar</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Gestionar cookies</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": ["header.autohide", "navigation.top", "navigation.tracking", "navigation.footer", "navigation.indexes", "content.code.annotate", "announce.dismiss", "toc.follow", "content.code.copy"], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>

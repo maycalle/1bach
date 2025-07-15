@@ -1,0 +1,1653 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://maycalle.github.io/1bach/programacionIA_01.html">
+      
+      
+        <link rel="prev" href="pygame_05.html">
+      
+      
+        <link rel="next" href="programacionIA_02.html">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Introducción a la IA - Contenidos de primero de bachillerato</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="css/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="yellow">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-introduccion-a-la-inteligencia-artificial" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="index.html" title="Contenidos de primero de bachillerato" class="md-header__button md-logo" aria-label="Contenidos de primero de bachillerato" data-md-component="logo">
+      
+  <img src="images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Contenidos de primero de bachillerato
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Introducción a la IA
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="yellow"  aria-label="Cambiar a modo noche"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo noche" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="yellow"  aria-label="Cambiar a modo día"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo día" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Contenidos de primero de bachillerato" class="md-nav__button md-logo" aria-label="Contenidos de primero de bachillerato" data-md-component="logo">
+      
+  <img src="images/logo.png" alt="logo">
+
+    </a>
+    Contenidos de primero de bachillerato
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introducción
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Programación
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Programación
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Python
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_01.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Primeros pasos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="prgoramacion_02.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Imprime, calcula y pregunta
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_03.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tipos de datos basicos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_04.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Otros operadores y estructuras selectivas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_05.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Estructuras repetitivas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_06.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Listas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_07.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Más sobre cadenas de texto
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_08.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Funciones
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    PyGame Zero
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            PyGame Zero
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pygame_01.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Primeros pasos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pygame_02.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Eventos y controles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pygame_03.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Colisiones básicas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pygame_04.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sonido, temporización y estados de juego
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pygame_05.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mecánicas de juego. Saltos y enemigos básicos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Inteligencia Artificial
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Inteligencia Artificial
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Introducción a la IA
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="programacionIA_01.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introducción a la IA
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#11-que-es-la-ia" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 ¿Qué es la IA?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-donde-encontramos-la-ia-en-nuestra-vida-diaria" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 ¿Dónde encontramos la IA en nuestra vida diaria?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-como-funciona-la-ia" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 ¿Cómo funciona la IA?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-tipos-de-ia" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 Tipos de IA
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-riesgos-y-beneficios-de-la-ia" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 Riesgos y beneficios de la IA
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resumen" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESUMEN
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacionIA_02.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Machine Learning y Deep Learning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Sistemas informáticos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Sistemas informáticos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sistemas_01.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introducción
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sistemas_02.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Componentes básicos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sistemas_03.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Evolución histórica
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sisiemas_04.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Características actuales
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Redes
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Redes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="redes_01.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introducción
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="redes_02.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tipos de redes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="redes_03.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Elementos físicos de una red
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="redes_04.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Fundamentos lógicos de las redes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="redes_05.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Diseño y estructura lógica de una red local
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Servicios en red
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Servicios en red
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="html_01.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HTML
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#11-que-es-la-ia" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 ¿Qué es la IA?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-donde-encontramos-la-ia-en-nuestra-vida-diaria" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 ¿Dónde encontramos la IA en nuestra vida diaria?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-como-funciona-la-ia" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 ¿Cómo funciona la IA?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-tipos-de-ia" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 Tipos de IA
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-riesgos-y-beneficios-de-la-ia" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 Riesgos y beneficios de la IA
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resumen" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESUMEN
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="1-introduccion-a-la-inteligencia-artificial">1. Introducción a la Inteligencia Artificial<a class="headerlink" href="#1-introduccion-a-la-inteligencia-artificial" title="Permanent link">&para;</a></h1>
+<p>La <strong>inteligencia artificial</strong> es una de las tecnologías más influyentes del siglo XXI, con aplicaciones en múltiples sectores y un impacto creciente en nuestra vida cotidiana. En esta unidad, nos adentraremos en el concepto de IA, sus principios fundamentales, sus aplicaciones más relevantes y los retos éticos que plantea.</p>
+<p>Durante el desarrollo de la unidad, abordaremos:
+* La definición y evolución de la inteligencia artificial.
+* Las distintas aplicaciones de la IA en la vida diaria y en diversos campos profesionales.
+* Los fundamentos del aprendizaje automático y su funcionamiento.
+* Los riesgos y beneficios asociados a su uso.</p>
+<p>A través de ejemplos concretos y ejercicios prácticos, desarrollaremos una visión crítica sobre la inteligencia artificial, comprendiendo tanto su potencial como sus desafíos.</p>
+<h2 id="11-que-es-la-ia">1.1 ¿Qué es la IA?<a class="headerlink" href="#11-que-es-la-ia" title="Permanent link">&para;</a></h2>
+<p>La <strong>Inteligencia Artificial (IA)</strong> es la capacidad de las máquinas para realizar tareas que normalmente requieren inteligencia humana, como aprender, razonar, resolver problemas o tomar decisiones.</p>
+<blockquote>
+<p>📌 DATO CURIOSO: El término <em>Inteligencia Artificial</em> fue acuñado en 1956 por John McCarthy, un científico que soñaba con crear máquinas que "pensaran" por sí mismas.</p>
+</blockquote>
+<h2 id="12-donde-encontramos-la-ia-en-nuestra-vida-diaria">1.2 ¿Dónde encontramos la IA en nuestra vida diaria?<a class="headerlink" href="#12-donde-encontramos-la-ia-en-nuestra-vida-diaria" title="Permanent link">&para;</a></h2>
+<p>La IA está cada vez más presente en nuestra vida diaria, aunque a veces no lo notemos. Aquí tienes algunos ejemplos:</p>
+<ul>
+<li>Tu móvil desbloqueándose con tu cara → Reconocimiento facial.</li>
+<li>Netflix recomendándote series que te gustan → Algoritmos de recomendación.</li>
+<li>Siri, Alexa o Google Assistant respondiendo preguntas → Procesamiento de lenguaje natural.</li>
+<li>Google Maps calculando la ruta más rápida → Análisis de datos en tiempo real.</li>
+<li>Filtros de redes sociales detectando tu rostro y aplicando efectos → Visión por computadora.</li>
+<li>Coches autónomos como Tesla → Sistemas de IA analizan el tráfico, peatones y señales de tráfico para conducir sin intervención humana.</li>
+<li>IA en los videojuegos → Los enemigos en un shooter reaccionan a tus movimientos, los NPC (personajes no jugadores) en juegos de rol actúan de forma más realista.</li>
+</ul>
+<blockquote>
+<p>🔍 <strong>EJERCICIO RÁPIDO</strong></p>
+<p>¿Cuánta IA has usado hoy? Haz una lista de todas las veces que has interactuado con sistemas de IA desde que te has despertado. A continuación, compara tu lista con la de tu compañero/a:
+* ¿Quién usó más IA?
+* ¿En qué áreas de la vida se usa más IA? (entretenimiento, comunicación, transporte, etc.)
+* ¿Hubo alguna IA que tu compañero/a anotó y que tú no habías notado?</p>
+</blockquote>
+<h2 id="12-como-funciona-la-ia">1.2 ¿Cómo funciona la IA?<a class="headerlink" href="#12-como-funciona-la-ia" title="Permanent link">&para;</a></h2>
+<p>Para que una máquina "aprenda", necesita datos. La IA analiza grandes volúmenes de información y encuentra patrones para tomar decisiones.</p>
+<blockquote>
+<p>📌 Ejemplo: Un sistema de IA que reconoce gatos en fotos necesita ver miles de imágenes de gatos para aprender a identificarlos.</p>
+</blockquote>
+<p>La IA aprende siguiendo estos cuatro pasos:</p>
+<ol>
+<li><strong>Recoger datos:</strong> se recopilan datos de distintas fuentes. Por ejemplo, imágenes de gatos y perros para entrenar un sistema de clasificación de animales.</li>
+<li><strong>Procesar y almacenar información:</strong> se organizan los datos en un formato que la máquina pueda entender, como valores numéricos que representan colores y formas. </li>
+<li><strong>Aprender patrones:</strong> la IA analiza los datos y detecta características recurrentes, como las orejas puntiagudas y ojos grandes de los gatos.</li>
+<li><strong>Generar predicciones:</strong> a partir de lo aprendido, la IA realiza inferencias. Por ejemplo: <em>"Esta imagen tiene orejas puntiagudas y ojos grandes, probablemente sea un gato."</em></li>
+</ol>
+<h2 id="13-tipos-de-ia">1.3 Tipos de IA<a class="headerlink" href="#13-tipos-de-ia" title="Permanent link">&para;</a></h2>
+<p>No todas las IA son iguales. Se pueden clasificar en dos grandes categorías:</p>
+<ul>
+<li><strong>Inteligencia artificial fuerte (general)</strong>: se trata de una IA capaz de replicar la inteligencia humana en múltiples tareas y aprender conceptos nuevos sin intervención externa. Podemos encontrar algunos ejemplos ilustrativos de lo que supone en algunas películas o series de ciencia ficción. Por ejemplo, el asistente <em>Jarvis</em> (IronMan), o el robot <em>Sony</em> (Yo, robot). En la actualidad, no existe, pero herramientas como ChatGPT y robots avanzados nos acercan a esta posibilidad.</li>
+<li><strong>Inteligencia artificial débil (específica)</strong>: diseñada para realizar una tarea concreta, como el reconocimiento de voz, la detección de fraudes o la conducción autónoma. Estas IA ya están ampliamente implementadas en la vida real.</li>
+</ul>
+<h2 id="14-riesgos-y-beneficios-de-la-ia">1.4 Riesgos y beneficios de la IA<a class="headerlink" href="#14-riesgos-y-beneficios-de-la-ia" title="Permanent link">&para;</a></h2>
+<p>La inteligencia artificial está revolucionando múltiples sectores, con grandes ventajas pero también riesgos importantes. Veamos algunos ejemplos concretos.</p>
+<ul>
+<li>
+<p><strong>Beneficios</strong></p>
+<ul>
+<li><strong>Medicina y diagnóstico</strong>: un sistema de IA desarrollado por <em>Google Health</em> y <em>DeepMind</em> logró detectar cáncer de mama con mayor precisión que los radiólogos. Un estudio publicado en Nature en 2020 mostró que la IA redujo los falsos positivos y falsos negativos en mamografías.</li>
+<li><strong>Accesibilidad y traducción automática:</strong> <em>Google Translate</em> y <em>Whisper AI</em> de OpenAI han mejorado la accesibilidad para personas con discapacidad auditiva al generar subtítulos en tiempo real con gran precisión. También, las IA pueden describir imágenes para personas con discapacidad visual.</li>
+<li><strong>Creatividad y arte:</strong> herramientas como <em>DALL·E</em> de OpenAI y <em>Runway ML</em> permiten a los diseñadores crear imágenes, animaciones y efectos especiales con IA. DALL·E puede generar imágenes a partir de texto, mientras que Runway ML ha sido utilizada en producciones de Hollywood.</li>
+</ul>
+</li>
+<li>
+<p><strong>Riesgos éticos y sociales</strong></p>
+<ul>
+<li><strong>Desinformación y noticias falsas:</strong> con IA generativa es cada vez más difícil diferenciar lo real de lo falso. Se han creado deepfakes de políticos diciendo cosas que nunca dijeron, manipulando la opinión pública en elecciones.</li>
+<li><strong>Sesgo y discriminación:</strong> si los datos están sesgados, la IA tomará decisiones injustas. En EE.UU., un sistema de IA para predecir reincidencia criminal recomendaba penas más largas para personas de raza negra debido a datos históricos sesgados.</li>
+<li><strong>Privacidad:</strong> muchas IA recopilan datos personales sin que los propietarios sean plenamente conscientes de eso. Por ejemplo, algoritmos que rastrean lo que compras en internet o casos como los de  China, donde se usan sistemas de reconocimiento facial para monitorear a la población en tiempo real.</li>
+<li><strong>Impacto en el empleo especializado:</strong> a diferencia de la automatización industrial, la IA está empezando a reemplazar trabajos creativos e intelectuales. Por ejemplo, algunos medios de comunicación han reemplazado periodistas por IA para redactar noticias básicas. También, estudios de doblaje han comenzado a usar IA para replicar voces en lugar de contratar actores de voz.</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>🔍 <strong>EJERCICIO EN GRUPO</strong></p>
+<p>Forma un equipo de 3 o 4 personas y os convertiréis en detectives de IA. Vuestra misión es investigar cómo se está usando la IA en un campo específico y presentar vuestros hallazgos a la clase.</p>
+<p><strong>Fase 1:</strong> Elegid un campo donde se use IA. Cada equipo elegirá un área donde la IA tenga un papel importante. Aquí tenéis algunas opciones: 
+* Salud y Medicina → Diagnóstico de enfermedades, cirugías con IA, análisis de imágenes médicas
+* Transporte y conducción autónoma → Coches como Tesla, control del tráfico, predicción de rutas.
+* Videojuegos → NPCs inteligentes, personalización de experiencia, generación de mundos.
+* Entretenimiento y redes sociales → Recomendaciones de Netflix/Spotify, algoritmos de TikTok e Instagram.
+* Educación → IA en clases virtuales, herramientas como ChatGPT para estudiar.
+* Finanzas y comercio → IA en bancos, predicciones de la bolsa, atención al cliente con chatbots.</p>
+<p><strong>Fase 2:</strong> Investigad y responded a estas preguntas
+* ¿Qué problema soluciona la IA en este campo? 
+* ¿Cómo funciona? (explicación básica sin tecnicismos, pero clara).
+* Ejemplos reales: empresas, aplicaciones o proyectos que ya estén usando esta tecnología.
+* Beneficios y riesgos: ¿cuáles son las ventajas y los posibles problemas que puede causar?</p>
+<p>⚠️ <em>Consejo: Buscad información en artículos, vídeos o páginas web oficiales.</em></p>
+<p><strong>Fase 3:</strong> Preparad vuestra presentación
+* Tendréis 5 minutos para presentar lo que habéis investigado. Podéis elegir el formato que más os guste (presentación, poster o infografía, role-play o simulación sobre cómo funciona la IA en ese campo, mini-video explicativo, etc)</p>
+<p><strong>Fase 4:</strong> Reflexión final y debate. Después de todas las presentaciones, haremos una discusión en clase:
+* ¿Cuál fue el uso de la IA más sorprendente?
+* ¿Hay algún sector donde la IA pueda ser un problema más que una solución?
+* ¿Cómo os imagináis la IA en estos campos dentro de 10 años?</p>
+</blockquote>
+<h2 id="resumen">RESUMEN<a class="headerlink" href="#resumen" title="Permanent link">&para;</a></h2>
+<p>✅ La IA permite a las máquinas aprender y tomar decisiones basadas en datos.<br>
+✅ Existen diferentes tipos de IA: débil (especializada en una tarea) y fuerte (aún teórica).<br>
+✅ La IA ya está presente en nuestra vida diaria, desde asistentes virtuales hasta videojuegos y coches autónomos.<br>
+✅ Aunque tiene ventajas, también presenta riesgos como el sesgo, la privacidad y la automatización del trabajo.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="pygame_05.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Mecánicas de juego. Saltos y enemigos básicos">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Mecánicas de juego. Saltos y enemigos básicos
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="programacionIA_02.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Machine Learning y Deep Learning">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                Machine Learning y Deep Learning
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+
+
+<h4>Consentimiento de cookies</h4>
+<p>Este sitio web utiliza cookies para ofrecerte una mejor experiencia.  Al hacer clic en "Aceptar", aceptas el uso de cookies.  También puedes configurar tus preferencias de cookies si lo prefieres.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+    
+      
+    
+    
+      
+    
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Aceptar</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Gestionar cookies</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": ["header.autohide", "navigation.top", "navigation.tracking", "navigation.footer", "navigation.indexes", "content.code.annotate", "announce.dismiss", "toc.follow", "content.code.copy"], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>

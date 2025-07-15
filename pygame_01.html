@@ -1,0 +1,1873 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://maycalle.github.io/1bach/pygame_01.html">
+      
+      
+        <link rel="prev" href="programacion_08.html">
+      
+      
+        <link rel="next" href="pygame_02.html">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Primeros pasos - Contenidos de primero de bachillerato</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="css/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="yellow">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-primeros-pasos-con-pygame-zero" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="index.html" title="Contenidos de primero de bachillerato" class="md-header__button md-logo" aria-label="Contenidos de primero de bachillerato" data-md-component="logo">
+      
+  <img src="images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Contenidos de primero de bachillerato
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Primeros pasos
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="yellow"  aria-label="Cambiar a modo noche"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo noche" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="yellow"  aria-label="Cambiar a modo día"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo día" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Contenidos de primero de bachillerato" class="md-nav__button md-logo" aria-label="Contenidos de primero de bachillerato" data-md-component="logo">
+      
+  <img src="images/logo.png" alt="logo">
+
+    </a>
+    Contenidos de primero de bachillerato
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introducción
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Programación
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Programación
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Python
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_01.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Primeros pasos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="prgoramacion_02.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Imprime, calcula y pregunta
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_03.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tipos de datos basicos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_04.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Otros operadores y estructuras selectivas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_05.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Estructuras repetitivas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_06.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Listas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_07.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Más sobre cadenas de texto
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion_08.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Funciones
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    PyGame Zero
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            PyGame Zero
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Primeros pasos
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="pygame_01.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Primeros pasos
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#11-que-es-pygame-zero" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 ¿Qué es Pygame Zero?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-como-empezar" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 ¿Cómo empezar?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-sistema-de-coordenadas-en-pygame-zero" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 Sistema de coordenadas en PyGame Zero
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-estructura-basica-de-un-juego" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 Estructura básica de un juego
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.4 Estructura básica de un juego">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#141-dibujar-un-circulo-la-pantalla" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.1 Dibujar un círculo la pantalla
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#142-dibujar-otras-formas-y-texto" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.2 Dibujar otras formas y texto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#143-mostrar-una-imagen" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.3 Mostrar una imagen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#144-agregando-movimiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.4 Agregando movimiento
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pygame_02.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Eventos y controles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pygame_03.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Colisiones básicas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pygame_04.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sonido, temporización y estados de juego
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pygame_05.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mecánicas de juego. Saltos y enemigos básicos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Inteligencia Artificial
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Inteligencia Artificial
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacionIA_01.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introducción a la IA
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacionIA_02.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Machine Learning y Deep Learning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Sistemas informáticos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Sistemas informáticos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sistemas_01.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introducción
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sistemas_02.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Componentes básicos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sistemas_03.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Evolución histórica
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sisiemas_04.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Características actuales
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Redes
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Redes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="redes_01.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introducción
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="redes_02.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tipos de redes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="redes_03.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Elementos físicos de una red
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="redes_04.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Fundamentos lógicos de las redes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="redes_05.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Diseño y estructura lógica de una red local
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Servicios en red
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Servicios en red
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="html_01.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HTML
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#11-que-es-pygame-zero" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 ¿Qué es Pygame Zero?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-como-empezar" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 ¿Cómo empezar?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-sistema-de-coordenadas-en-pygame-zero" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 Sistema de coordenadas en PyGame Zero
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-estructura-basica-de-un-juego" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 Estructura básica de un juego
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.4 Estructura básica de un juego">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#141-dibujar-un-circulo-la-pantalla" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.1 Dibujar un círculo la pantalla
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#142-dibujar-otras-formas-y-texto" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.2 Dibujar otras formas y texto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#143-mostrar-una-imagen" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.3 Mostrar una imagen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#144-agregando-movimiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.4 Agregando movimiento
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="1-primeros-pasos-con-pygame-zero">1. Primeros pasos con Pygame Zero<a class="headerlink" href="#1-primeros-pasos-con-pygame-zero" title="Permanent link">&para;</a></h1>
+<p>¡Bienvenidos a <strong>Pygame Zero</strong>! Si te gusta la idea de crear videojuegos 2D y ya sabes un poquito de Python, estás en el lugar correcto. Pygame Zero es una herramienta que te permitirá dar vida a tus ideas de videojuegos de forma muy sencilla y divertida. </p>
+<h2 id="11-que-es-pygame-zero">1.1 ¿Qué es Pygame Zero?<a class="headerlink" href="#11-que-es-pygame-zero" title="Permanent link">&para;</a></h2>
+<p><strong>Pygame Zero</strong> es una versión simplificada de otra biblioteca más completa para crear juegos 2D, llamada <strong>Pygame</strong>. Está diseñada para que puedas empezar a programar videojuegos fácilmente y sin complicaciones. Al estar basada en Python, ¡te resultará muy familiar!</p>
+<p>Una de las <strong>ventajas de Pygame Zero</strong> es que se ocupa automáticamente de aspectos técnicos, como configurar la ventana del juego o crear un bucle principal (el "motor" que mantiene el juego en marcha). Así, puedes concentrarte en lo más divertido: diseñar personajes, dibujar escenarios y añadir interacción en pantalla.</p>
+<p><strong>¿Qué tipo de juegos puedes crear?</strong></p>
+<p>Con Pygame Zero, puedes hacer un montón de juegos diferentes. Aquí tienes algunas ideas:
+* <strong>Juego de plataformas tipo Super Mario:</strong> un personaje que salta, recoge monedas y esquiva enemigos.
+* <strong>Juego de disparos:</strong> donde controlas una nave espacial que destruye enemigos mientras evita obstáculos.
+* <strong>Juego de carreras:</strong> con coches que se mueven en una pista, acelerando y esquivando otros vehículos.
+* <strong>Puzzles</strong> al estilo Tetris o juegos de combinar piezas.
+* <strong>Aventuras gráficas:</strong> juegos donde puedes interactuar con objetos y personajes usando el ratón, como en clásicos de los 90.</p>
+<h2 id="12-como-empezar">1.2 ¿Cómo empezar?<a class="headerlink" href="#12-como-empezar" title="Permanent link">&para;</a></h2>
+<p>Lo primero que necesitas es <strong>instalar Pygame Zero</strong>. Es muy fácil:
+1. Abre la consola  (haz clic en el <strong>menú de Inicio</strong> y escribe <strong>cmd</strong>)
+2. Escribe este comando:</p>
+<div class="highlight"><pre><span></span><code><span class="n">pip</span> <span class="n">install</span> <span class="n">pgzero</span>
+</code></pre></div>
+<p>¡Y listo! Ya tienes Pygame Zero instalado.</p>
+<blockquote>
+<p><strong>NOTA:</strong> El comando PIP permite instalar herramientas adicionales en Python. En este caso, para obtener Pygame Zero, pero lo puedes usar para instalar otras muchas herramientas (es como una <em>"tienda de aplicaciones"</em> para Python).</p>
+</blockquote>
+<h2 id="13-sistema-de-coordenadas-en-pygame-zero">1.3 Sistema de coordenadas en PyGame Zero<a class="headerlink" href="#13-sistema-de-coordenadas-en-pygame-zero" title="Permanent link">&para;</a></h2>
+<p>Antes de empezar a ver la estructura básica de una aplicación de <em>Pygame Zero</em>, conviene entender cómo funciona su sistema de coordenadas, ya que es esencial para posicionar y mover elementos en la pantalla.</p>
+<ul>
+<li><strong>Origen:</strong> el punto (0, 0) está en la esquina superior izquierda de la pantalla.</li>
+<li><strong>Eje X (horizontal):</strong> aumenta de izquierda a derecha. Cuanto mayor sea el valor de x, más a la derecha estará el punto en la pantalla.</li>
+<li><strong>Eje Y (vertical):</strong> aumenta de arriba hacia abajo, al contrario de los sistemas de coordenadas en matemáticas. Cuanto mayor sea el valor de y, más abajo estará el punto en la pantalla.</li>
+<li><strong>Tamaño de la ventana:</strong> se define con <code>WIDTH</code> y <code>HEIGHT</code>. Por ejemplo, en una ventana de 800x600, el punto (800, 600) estaría en la esquina inferior derecha.</li>
+<li><strong>Centro de la pantalla:</strong> se puede calcular con (<code>WIDTH</code> // 2, <code>HEIGHT</code> // 2).</li>
+</ul>
+<p>Cualquier elemento en <em>Pygame Zero</em> (como texto, formas o imágenes) se posiciona según este sistema. Por ejemplo, (100, 50) colocaría un elemento a 100 píxeles de la izquierda y a 50 píxeles de la parte superior.</p>
+<h2 id="14-estructura-basica-de-un-juego">1.4 Estructura básica de un juego<a class="headerlink" href="#14-estructura-basica-de-un-juego" title="Permanent link">&para;</a></h2>
+<h3 id="141-dibujar-un-circulo-la-pantalla">1.4.1 Dibujar un círculo la pantalla<a class="headerlink" href="#141-dibujar-un-circulo-la-pantalla" title="Permanent link">&para;</a></h3>
+<p>Vamos a empezar con algo sencillo: <strong>dibujar un círculo en la pantalla</strong> de nuestro juego. Para ello, necesitas familiarizarte con dos elementos clave: la función <code>draw()</code> y el objeto <code>screen</code>.</p>
+<ul>
+<li>
+<p><code>draw()</code> es la función que dibuja todo lo que aparece en la pantalla (personajes, fondos, objetos, etc). No tienes que llamarla, Pygame Zero lo hace automáticamente cada vez que necesita actualizar el dibujo. </p>
+</li>
+<li>
+<p><code>screen</code> es como un <em>"lienzo"</em> donde dibujas todo. Cada vez que quieras mostrar algo, lo harás a través de este objeto y sus funciones asociadas (¡tiene muchas!). </p>
+</li>
+</ul>
+<p>Para dibujar un círculo, usamos la función <code>screen.draw.circle()</code>, que acepta las coordenadas (x, y), el tamaño (radio) y el color del círculo. Aquí tienes un ejemplo:      </p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Importa la librería</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pgzrun</span>
+
+<span class="c1"># Define el tamaño de la ventana del juego</span>
+<span class="n">WIDTH</span> <span class="o">=</span> <span class="mi">800</span>
+<span class="n">HEIGHT</span> <span class="o">=</span> <span class="mi">600</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">draw</span><span class="p">():</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>  <span class="c1"># Limpia la pantalla</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">((</span><span class="mi">400</span><span class="p">,</span> <span class="mi">300</span><span class="p">),</span> <span class="mi">30</span><span class="p">,</span> <span class="s1">&#39;white&#39;</span><span class="p">)</span>  <span class="c1"># Dibuja un círculo blanco</span>
+
+<span class="n">pgzrun</span><span class="o">.</span><span class="n">go</span><span class="p">()</span>  <span class="c1"># Inicia el juego</span>
+</code></pre></div>
+<blockquote>
+<p><strong>Ejercicio 1.</strong>
+* Cambia el color del círculo y observa el resultado.
+* Modifica las coordenadas (x, y) para mover el círculo a otra posición en la pantalla.
+* Prueba con diferentes radios para ver cómo afecta el tamaño.</p>
+</blockquote>
+<h3 id="142-dibujar-otras-formas-y-texto">1.4.2 Dibujar otras formas y texto<a class="headerlink" href="#142-dibujar-otras-formas-y-texto" title="Permanent link">&para;</a></h3>
+<p>Una vez que domines los círculos, puedes experimentar con otras formas y texto. Aquí tienes algunos comandos adicionales que puedes probar:</p>
+<ul>
+<li><code>screen.fill(color)</code>: llena la pantalla con un color sólido.</li>
+<li><code>screen.draw.filled_circle((x, y), radio, color)</code>: dibuja un círculo relleno.</li>
+<li><code>screen.draw.line((x1, y1), (x2, y2), color)</code>: dibuja una línea entre dos puntos.</li>
+<li><code>screen.draw.rect(Rect((x, y), (ancho, alto)), color)</code>: dibuja un rectángulo con las dimensiones especificadas por (ancho, alto) en la posición (x, y).</li>
+<li><code>screen.draw.text("Texto", (x, y), color='white', fontsize=40)</code>: escribe texto en la pantalla con el formato que le indiques: <em>fontsize</em> (tamaño del texto), <em>color</em> (color del texto), <em>shadow</em> (coordenada de desplazamiento del sombreado) y <em>scolor</em> para especificar el color de la sombra.</li>
+</ul>
+<p>Prueba el siguiente ejemplo, observa el resultado y dónde se colocan las formas: </p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Importa la librería</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pgzrun</span>
+
+<span class="c1"># Define el tamaño de la ventana del juego</span>
+<span class="n">WIDTH</span> <span class="o">=</span> <span class="mi">800</span>
+<span class="n">HEIGHT</span> <span class="o">=</span> <span class="mi">600</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">draw</span><span class="p">():</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>  <span class="c1"># Limpia la pantalla</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="s1">&#39;skyblue&#39;</span><span class="p">)</span>  <span class="c1"># Pinta el fondo de azul cielo</span>
+
+    <span class="c1"># Dibuja un rectángulo</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">filled_rect</span><span class="p">(</span><span class="n">Rect</span><span class="p">((</span><span class="mi">150</span><span class="p">,</span> <span class="mi">200</span><span class="p">),</span> <span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="mi">50</span><span class="p">)),</span> <span class="s1">&#39;green&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Dibuja un círculo</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">filled_circle</span><span class="p">((</span><span class="mi">400</span><span class="p">,</span> <span class="mi">300</span><span class="p">),</span> <span class="mi">50</span><span class="p">,</span> <span class="s1">&#39;orange&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Dibuja líneas de un extremo al otro</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">line</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="n">WIDTH</span><span class="p">,</span> <span class="n">HEIGHT</span><span class="p">),</span> <span class="s1">&#39;red&#39;</span><span class="p">)</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">line</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="n">HEIGHT</span><span class="p">),</span> <span class="p">(</span><span class="n">WIDTH</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="s1">&#39;purple&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Dibuja texto en la pantalla</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="s1">&#39;¡Bienvenidos a Pygame Zero!&#39;</span><span class="p">,</span> <span class="p">(</span><span class="mi">150</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">shadow</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span> <span class="n">scolor</span><span class="o">=</span><span class="s2">&quot;#202020&quot;</span><span class="p">)</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="s1">&#39;Experimenta dibujando formas&#39;</span><span class="p">,</span> <span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="mi">450</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;yellow&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
+
+<span class="n">pgzrun</span><span class="o">.</span><span class="n">go</span><span class="p">()</span> <span class="c1"># Inicia el juego</span>
+</code></pre></div>
+<blockquote>
+<p><strong>Ejercicio 2.</strong>
+* Cambia los colores y posiciones de cada forma.
+* Dibuja dos rectángulos y cambia su tamaño.
+* Dibuja una línea roja y un círculo amarillo.
+* Dibuja un texto en la parte superior.
+* Añade texto en diferentes ubicaciones de la pantalla. </p>
+</blockquote>
+<h3 id="143-mostrar-una-imagen">1.4.3 Mostrar una imagen<a class="headerlink" href="#143-mostrar-una-imagen" title="Permanent link">&para;</a></h3>
+<p>Para mostrar una imagen, guárdala primero en una carpeta especial llamada <strong>images</strong>, ubicada en el mismo directorio que tu archivo de código.</p>
+<ul>
+<li>
+<p>El nombre del archivo debe estar en minúsculas y sin espacios. Si tiene varias palabras, usa guiones bajos (por ejemplo, mi_imagen.png).</p>
+</li>
+<li>
+<p>Para mostrar la imagen en pantalla, usa: <code>screen.blit('nombre_imagen', (x, y))</code>.</p>
+</li>
+</ul>
+<p>Descarga <a href="img/mapache_genial.png">esta imagen</a> y prueba este ejemplo:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pgzrun</span>
+
+<span class="c1"># Definir el tamaño de la ventana del juego</span>
+<span class="n">WIDTH</span> <span class="o">=</span> <span class="mi">800</span>
+<span class="n">HEIGHT</span> <span class="o">=</span> <span class="mi">600</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">draw</span><span class="p">():</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>  <span class="c1"># Limpiar la pantalla</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="s1">&#39;lightblue&#39;</span><span class="p">)</span>  <span class="c1"># Fondo color azul claro</span>
+
+    <span class="c1"># Mostrar la imagen divertida</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="s1">&#39;mapache_genial.png&#39;</span><span class="p">,</span> <span class="p">(</span><span class="mi">220</span><span class="p">,</span> <span class="mi">200</span><span class="p">))</span>
+
+    <span class="c1"># Texto para acompañar la imagen</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="s2">&quot;¡Mira esta imagen divertida!&quot;</span><span class="p">,</span> <span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span>
+
+<span class="n">pgzrun</span><span class="o">.</span><span class="n">go</span><span class="p">()</span> <span class="c1"># Inicia el juego</span>
+</code></pre></div>
+<blockquote>
+<p><strong>Ejercicio 3.</strong><br />
+* Limpia la pantalla.
+* Rellena la pantalla con un color de fondo.
+* Carga una imagen en una posición específica</p>
+</blockquote>
+<h3 id="144-agregando-movimiento">1.4.4 Agregando movimiento<a class="headerlink" href="#144-agregando-movimiento" title="Permanent link">&para;</a></h3>
+<p>Ahora que ya sabes dibujar y mostrar imágenes, vamos a incorporar el movimiento. Para ello, utilizaremos la función <code>update()</code>, que se ejecuta constantemente. Aquí colocaremos la lógica que controla el comportamiento del juego, como mover personajes, detectar colisiones, o cambiar el estado del juego.</p>
+<p><strong>Ejemplo: moviendo el círculo</strong></p>
+<p>Vamos a modificar el código para que el círculo se mueva hacia la derecha.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Importa la librería</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pgzrun</span>
+
+<span class="c1"># Define el tamaño de la ventana del juego</span>
+<span class="n">WIDTH</span> <span class="o">=</span> <span class="mi">800</span>
+<span class="n">HEIGHT</span> <span class="o">=</span> <span class="mi">600</span>
+
+<span class="c1"># Define la posición inicial del círculo</span>
+<span class="n">circle_x</span> <span class="o">=</span> <span class="mi">400</span>
+<span class="n">circle_y</span> <span class="o">=</span> <span class="mi">300</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">draw</span><span class="p">():</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>  <span class="c1"># Limpia la pantalla</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">((</span><span class="n">circle_x</span><span class="p">,</span> <span class="n">circle_y</span><span class="p">),</span> <span class="mi">30</span><span class="p">,</span> <span class="s1">&#39;white&#39;</span><span class="p">)</span>  <span class="c1"># Dibuja el círculo </span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">update</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">circle_x</span>
+    <span class="n">circle_x</span> <span class="o">+=</span> <span class="mi">2</span>  <span class="c1"># Mueve el círculo 2 píxeles hacia la derecha en cada actualización</span>
+
+<span class="n">pgzrun</span><span class="o">.</span><span class="n">go</span><span class="p">()</span>  <span class="c1"># Inicia el juego</span>
+</code></pre></div>
+<p>¡Nuestro círculo ya se está moviendo por la pantalla! Te explico algunos detalles: </p>
+<ul>
+<li><strong>Coordenadas iniciales:</strong> las variables <code>circle_x</code> y <code>circle_y</code> definen las coordenadas iniciales del círculo, colocándolo en el centro de la pantalla.</li>
+<li><strong>Función <code>draw()</code>:</strong> dibuja el círculo en la posición definida en las coordenadas <code>circle_x</code> y <code>circle_y</code>. </li>
+<li><strong>Función <code>update()</code>:</strong> incrementa <code>circle_x</code> en 2 píxeles cada vez que se ejecuta, moviendo el círculo hacia la derecha.</li>
+<li><strong>Uso de global:</strong> utilizamos <code>global circle_x</code> en <code>update()</code> para modificar <code>circle_x</code> dentro de la función.</li>
+</ul>
+<p>Pygame Zero llama automáticamente a <code>draw()</code> y <code>update()</code> muchas veces por segundo para mantener el círculo actualizado en pantalla.</p>
+<p><strong>Ejemplo: mapache en movimiento</strong></p>
+<p>Ahora que tenemos un círculo en movimiento, vamos a darle vida a una imagen de una mapache para que se desplace de lado a lado en la pantalla. En este ejemplo, la imagen se moverá hacia la derecha, y cuando llegue al borde derecho, reaparecerá por el borde izquierdo, creando un efecto de desplazamiento continuo.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pgzrun</span>
+
+<span class="c1"># Define el tamaño de la ventana del juego</span>
+<span class="n">WIDTH</span> <span class="o">=</span> <span class="mi">800</span>
+<span class="n">HEIGHT</span> <span class="o">=</span> <span class="mi">600</span>
+
+<span class="c1"># Define la posición inicial de la imagen</span>
+<span class="n">mapache_x</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">mapache_y</span> <span class="o">=</span> <span class="mi">300</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">draw</span><span class="p">():</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>  <span class="c1"># Limpia la pantalla</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="s1">&#39;mapache_genial&#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">mapache_x</span><span class="p">,</span> <span class="n">mapache_y</span><span class="p">))</span>  <span class="c1"># Dibuja la imagen </span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">update</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">mapache_x</span>
+    <span class="n">mapache_x</span> <span class="o">+=</span> <span class="mi">2</span>  <span class="c1"># Mueve la imagen 2 píxeles hacia la derecha en cada actualización</span>
+
+    <span class="c1"># Si el mapache sale de la pantalla, vuelve hacia a la izquierda</span>
+    <span class="k">if</span> <span class="n">mapache_x</span> <span class="o">&gt;</span> <span class="n">WIDTH</span><span class="p">:</span>
+        <span class="n">mapache_x</span> <span class="o">=</span> <span class="o">-</span><span class="mi">100</span>  <span class="c1"># Hace que reaparezca desde el lado izquierdo</span>
+
+<span class="n">pgzrun</span><span class="o">.</span><span class="n">go</span><span class="p">()</span>  <span class="c1"># Iniciar el juego</span>
+</code></pre></div>
+<p>En este código, hemos logrado que el mapache salga de la pantalla por la derecha y aparezca por la izquierda. Pero, ¿qué pasa si queremos que se mueva de arriba hacia abajo y cambie de dirección al alcanzar el borde creando un efecto de "rebote"?</p>
+<p><strong>Ejemplo: movimiento vertical con control de bordes</strong></p>
+<p>En este ejemplo, animaremos una imagen de un mapache para que suba y baje dentro de los límites de la pantalla. Cuando alcance el borde superior o inferior, cambiará de dirección automáticamente.</p>
+<p>Agregaremos una variable <code>velocidad_y</code> para representar la dirección y velocidad vertical. Cuando el mapache llegue al borde superior o inferior, invertiremos el valor de <code>velocidad_y</code>, logrando que rebote.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Importa las librerías necesarias</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pgzrun</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+
+<span class="c1"># Centra la ventana del juego en la pantalla</span>
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;SDL_VIDEO_CENTERED&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;1&#39;</span>
+
+<span class="c1"># Define el tamaño de la ventana del juego</span>
+<span class="n">WIDTH</span> <span class="o">=</span> <span class="mi">800</span>
+<span class="n">HEIGHT</span> <span class="o">=</span> <span class="mi">600</span>
+
+<span class="c1"># Carga la imagen y calcula su tamaño</span>
+<span class="n">mapache_image</span> <span class="o">=</span> <span class="n">images</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;mapache_genial.png&#39;</span><span class="p">)</span>
+<span class="n">mapache_ancho</span> <span class="o">=</span> <span class="n">mapache_image</span><span class="o">.</span><span class="n">get_width</span><span class="p">()</span>
+<span class="n">mapache_alto</span> <span class="o">=</span> <span class="n">mapache_image</span><span class="o">.</span><span class="n">get_height</span><span class="p">()</span>
+
+<span class="c1"># Define la posición inicial de la imagen</span>
+<span class="n">mapache_x</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">mapache_y</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">mapache_velocidad_y</span> <span class="o">=</span> <span class="mi">2</span>  <span class="c1"># Velocidad de movimiento vertical</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">draw</span><span class="p">():</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>  <span class="c1"># Limpia la pantalla</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="s1">&#39;mapache_genial.png&#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">mapache_x</span><span class="p">,</span> <span class="n">mapache_y</span><span class="p">))</span>  <span class="c1"># Dibuja la imagen </span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">update</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">mapache_y</span><span class="p">,</span> <span class="n">mapache_velocidad_y</span>
+
+    <span class="c1"># Mueve la imagen en el eje Y </span>
+    <span class="n">mapache_y</span> <span class="o">+=</span> <span class="n">mapache_velocidad_y</span>
+
+    <span class="c1"># Si el mapache alcanza los límites superior o inferior, invierte su dirección</span>
+    <span class="k">if</span> <span class="n">mapache_y</span> <span class="o">&lt;=</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">mapache_y</span> <span class="o">&gt;=</span> <span class="n">HEIGHT</span> <span class="o">-</span> <span class="n">mapache_alto</span><span class="p">:</span>  <span class="c1"># Ajuste según el tamaño de la imagen</span>
+        <span class="n">mapache_velocidad_y</span> <span class="o">=</span> <span class="o">-</span><span class="n">mapache_velocidad_y</span>  <span class="c1"># Cambia la dirección vertical</span>
+
+<span class="n">pgzrun</span><span class="o">.</span><span class="n">go</span><span class="p">()</span>  <span class="c1"># Iniciar el juego</span>
+</code></pre></div>
+<ul>
+<li>
+<p><strong>Cargar la imagen:</strong> la imagen del mapache se carga con <code>images.load('mapache_genial.png')</code>, y luego usamos <code>get_width()</code> y <code>get_height()</code> para obtener sus dimensiones (mapache_ancho y mapache_alto). Esto es fundamental para controlar los bordes: al restar el alto de la imagen del límite inferior (HEIGHT - mapache_alto), evitamos que el mapache se salga de la pantalla.</p>
+</li>
+<li>
+<p><strong>Posición inicial y velocidad:</strong> <em>mapache_x</em> y <em>mapache_y</em> representan la posición inicial de la imagen. <em>mapache_velocidad_y</em> controla la velocidad y dirección del movimiento vertical. Un valor positivo hace que el mapache se mueva hacia abajo, mientras que un valor negativo lo hace subir.</p>
+</li>
+<li>
+<p><strong>Función <code>update()</code>:</strong> Aquí es donde ocurre el movimiento:</p>
+<ul>
+<li><strong>Movimiento vertical:</strong> <em>mapache_y</em> se incrementa o decrementa según <em>mapache_velocidad_y</em>.</li>
+<li><strong>Control de bordes:</strong> comprobamos si <em>mapache_y</em> ha alcanzado el límite superior (mapache_y &lt;= 0) o el límite inferior (mapache_y &gt;= HEIGHT - mapache_alto). Si ha alcanzado uno de estos límites, invertimos <em>mapache_velocidad_y</em>, haciendo que el mapache rebote.</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>Ejercicio 4.</strong> 
+* Modifica el código para que el mapache también se mueva hacia los lados, rebotando en los bordes izquierdo y derecho de la pantalla.
+* Añade un texto en pantalla que se mueva de derecha a izquierda. Cuando el texto alcance el borde izquierdo, haz que reaparezca en el borde derecho para crear un efecto de desplazamiento continuo.
+* Ajusta la velocidad del texto cambiando su velocidad y observa cómo afecta al movimiento.
+* Añade otro texto que se mueva de izquierda a derecha, pero que cambie de dirección al llegar a los bordes en lugar de reaparecer.</p>
+</blockquote>
+<p><strong>IMPORTANTE:</strong> Si quieres que la ventana de <em>Pygame Zero</em> se abra centrada en la pantalla y evitar así problemas de visualización, puedes añadir las siguientes líneas al inicio de tu código, antes de importar la biblioteca <code>pgzrun</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;SDL_VIDEO_CENTERED&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;1&#39;</span>
+</code></pre></div>
+<p>Esta configuración hace que la ventana del juego se coloque automáticamente en el centro de la pantalla cada vez que ejecutes tu programa, garantizando que todos los elementos dibujados sean visibles.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="programacion_08.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Funciones">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Funciones
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="pygame_02.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Eventos y controles">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                Eventos y controles
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+
+
+<h4>Consentimiento de cookies</h4>
+<p>Este sitio web utiliza cookies para ofrecerte una mejor experiencia.  Al hacer clic en "Aceptar", aceptas el uso de cookies.  También puedes configurar tus preferencias de cookies si lo prefieres.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+    
+      
+    
+    
+      
+    
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Aceptar</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Gestionar cookies</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": ["header.autohide", "navigation.top", "navigation.tracking", "navigation.footer", "navigation.indexes", "content.code.annotate", "announce.dismiss", "toc.follow", "content.code.copy"], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>
