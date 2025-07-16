@@ -24,7 +24,7 @@ Está compuesto por:
 
 👉 **Criterio clave:** para que algo sea un sistema informático, debe procesar información de forma automatizada mediante hardware, software y datos. Si falta uno de esos elementos, no lo es.
 
-## 1.2 Componentes de un SI: HW y SW
+## 1.2 Componentes de un SI
 
 ### 1.2.1 Hardware 
 
