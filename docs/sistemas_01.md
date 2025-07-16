@@ -70,13 +70,13 @@ La **arquitectura de Von Neumann** es el modelo sobre el que se basan la mayorí
 
 ### 1.4.1 ¿Por qué fue revolucionaria?
 
-Antes, las computadoras se diseñaban para tareas fijas y era necesario modificar físicamente el hardware para cambiar de programa. 
+Antes de la arquitectura de Von Neumann, los primeros ordenadores —como el **ENIAC (1945)**— no tenían memoria para almacenar programas. Para que realizaran una nueva tarea, era necesario **reconfigurar físicamente el hardware**, es decir, desconectar y volver a conectar cables, cambiar interruptores y reorganizar módulos. Esto podía llevar horas o incluso días. Era como tener que desmontar y reconstruir una máquina entera cada vez que querías hacer algo diferente.
 
-Gracias a la arquitectura de Von Neumann se puede:
+Con la propuesta de Von Neumann, esto cambió radicalmente. La idea de **guardar tanto los datos como las instrucciones en la misma memoria** permitió que el ordenador pudiera **cambiar de tarea simplemente cargando otro programa**, sin modificar el hardware. Por primera vez, el software se convirtió en el elemento flexible que determinaba qué hacía el ordenador.
 
-- Cambiar de programa sin cambiar el hardware.
-- Usar un ordenador para múltiples tareas.
-- Tener sistemas más flexibles, programables y potentes.
+Hoy en día, esta idea es tan normal que parece obvia. Podemos abrir una app, cerrar otra, actualizar un juego o instalar un sistema operativo nuevo con unos pocos clics. Pero en su momento, supuso una revolución técnica, conceptual y operativa. Fue el paso clave para que los ordenadores dejaran de ser herramientas especializadas y se convirtieran en máquinas universales capaces de adaptarse a múltiples usos.
+
+Imagina que cada vez que quisieras cambiar de app en tu móvil tuvieras que abrirlo, soldar cables y volver a ensamblarlo. Esa era, en esencia, la informática antes de Von Neumann.
 
 ### 1.4.2 Componentes principales 
 
