@@ -39,9 +39,9 @@ Se divide en:
 - **Memoria:** almacena datos temporalmente (RAM, caché).
 - **Almacenamiento secundario:** guarda información de forma persistente (discos duros, SSD, unidades USB).
 - **Periféricos:**
-  - **Entrada:** teclado, ratón, escáner.
-  - **Salida:** pantalla, impresora.
-  - **Mixtos:** pantalla táctil, webcam, unidades de almacenamiento externas.
+    - **Entrada:** teclado, ratón, escáner.
+    - **Salida:** pantalla, impresora.
+    - **Mixtos:** pantalla táctil, webcam, unidades de almacenamiento externas.
 
 ### 1.2.2 Software
 
@@ -55,7 +55,7 @@ Se clasifica en:
 
 📌 **Curiosidad:** hoy en día muchas apps funcionan directamente en la web, sin necesidad de instalar nada (como Google Docs o Canva), gracias al desarrollo del **cloud computing**.
 
-## 1.3 Relación simbiótica entre hardware y software
+## 1.3 Relación entre hardware y software
 
 - El **hardware sin software** no tiene instrucciones que seguir; es como un cuerpo sin cerebro.
 - El **software sin hardware** no puede ejecutarse; necesita un medio físico para funcionar.
@@ -135,5 +135,12 @@ Estos dispositivos **no forman parte del núcleo de la arquitectura**, pero son 
 | Flexibilidad               | Se puede cambiar el programa sin modificar el hardware.                     |
 | Reutilización del hardware | El mismo hardware sirve para ejecutar diferentes programas. 
 
+## 1.5 Resumen 
 
-Conocer qué es un sistema informático y cómo están organizados sus componentes es **la base para entender toda la informática moderna**. Desde ordenadores personales hasta dispositivos inteligentes, todos funcionan según estos mismos principios.
+En esta unidad hemos aprendido qué es un sistema informático y cuáles son sus componentes fundamentales: hardware, software y datos. Un dispositivo solo se considera sistema informático si integra esos tres elementos y procesa información de forma automatizada.
+
+Hemos distinguido ejemplos reales de sistemas informáticos frente a otros que no lo son, como relojes digitales básicos o cámaras desechables. También hemos comprendido la dependencia mutua entre hardware y software, ya que uno no puede funcionar correctamente sin el otro.
+
+Por último, hemos estudiado la arquitectura de Von Neumann, base de la mayoría de los ordenadores actuales. Este modelo organiza el sistema en torno a una CPU, una memoria unificada, buses de comunicación y dispositivos de entrada/salida, permitiendo flexibilidad y reutilización del hardware con solo cambiar el software.
+
+
