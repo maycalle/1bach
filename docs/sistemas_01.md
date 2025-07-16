@@ -5,19 +5,22 @@
 Un **sistema informático** es un conjunto de elementos interconectados que trabajan de forma coordinada para **recibir, procesar, almacenar y transmitir información** de forma automática y eficiente. Su objetivo es realizar tareas que van desde operaciones básicas (como escribir un documento) hasta procesos complejos (como simular un clima o diagnosticar una enfermedad).
 
 Está compuesto por:
+
 - **Hardware:** los componentes físicos del sistema.
 - **Software:** los programas que indican al hardware qué hacer.
 - **Datos:** la información que se introduce, procesa y produce.
 
-📌 Nota: los **usuarios** no forman parte del sistema informático como tal, aunque interactúan con él constantemente (por ejemplo, introduciendo datos o interpretando resultados).
+📌 **Observación:** los usuarios no forman parte del sistema informático como tal, aunque interactúan con él constantemente (por ejemplo, introduciendo datos o interpretando resultados).
 
-✅ Ejemplos de sistemas informáticos:
+**Ejemplos de sistemas informáticos:**
+
 - Un *ordenador personal* con sus periféricos y sistema operativo.
 - Un *cajero automático* que procesa transacciones bancarias.
 - Un *smartphone* que ejecuta apps, recibe datos y muestra resultados.
 - Una *impresora multifunción con Wi-Fi y pantalla táctil**, que guarda trabajos en cola y puede recibir archivos desde la nube.
 
-❌ Ejemplos de sistemas que **NO** se consideran sistemas informáticos:
+**Ejemplos de sistemas que NO se consideran sistemas informáticos:**
+
 - Una *calculadora básica*:	aunque tiene componentes electrónicos, no ejecuta software programable ni guarda datos.
 - Un *reloj digital sencillo*: solo muestra la hora mediante circuitos fijos, sin procesamiento programable.
 - Una *cámara desechable con flash*: usa componentes electrónicos, pero no almacena ni procesa información digital.
@@ -31,6 +34,7 @@ Está compuesto por:
 El **hardware** es la parte física y tangible del sistema. 
 
 Se divide en:
+
 - **Unidad central de procesamiento (CPU):** ejecuta instrucciones.
 - **Memoria:** almacena datos temporalmente (RAM, caché).
 - **Almacenamiento secundario:** guarda información de forma persistente (discos duros, SSD, unidades USB).
@@ -44,6 +48,7 @@ Se divide en:
 El **software** es el conjunto de instrucciones y programas que controlan el hardware. 
 
 Se clasifica en:
+
 - **Sistema operativo:** gestiona los recursos del sistema (Windows, Linux, Android, macOS).
 - **Software de aplicación:** permite realizar tareas específicas (navegadores, procesadores de texto, videojuegos).
 - **Software de desarrollo:** herramientas para crear otros programas (editores de código, compiladores, entornos IDE).
@@ -56,10 +61,12 @@ Se clasifica en:
 - El **software sin hardware** no puede ejecutarse; necesita un medio físico para funcionar.
 
 Esta **relación simbiótica**  hace que el desarrollo de uno influya directamente en el otro:
+
 - **Nuevos procesadores** → programas más complejos y potentes.
 - **Nuevos programas** → necesidad de mejorar el hardware para ejecutarlos correctamente.
 
 **Ejemplo:** Para jugar a un viodejuego moderno en resolución 4K se requiere:
+
 - Una GPU avanzada (hardware) y
 - Un motor gráfico optimizado (software), como *Unreal Engine* o *Unity*.
 
@@ -72,6 +79,7 @@ La **arquitectura de Von Neumann** es el modelo sobre el que se basan la mayorí
 Antes, las computadoras se diseñaban para tareas fijas y era necesario modificar físicamente el hardware para cambiar de programa. 
 
 Gracias a la arquitectura de Von Neumann se puede:
+
 - Cambiar de programa sin cambiar el hardware.
 - Usar un ordenador para múltiples tareas.
 - Tener sistemas más flexibles, programables y potentes.
@@ -91,6 +99,7 @@ La CPU es el **cerebro del sistema**. Su función es **ejecutar instrucciones** 
 La memoria principal es donde se cargan **los programas y datos que la CPU necesita ejecutar en ese momento**. 
 
 Se guarda:
+
 - El código que el procesador va a ejecutar.
 - Los datos que necesita para trabajar.
 
@@ -111,6 +120,7 @@ Los buses son **caminos por los que circula la información** dentro del ordenad
 #### 4. Dispositivos de Entrada/Salida (E/S)
 
 Son los componentes que permiten al sistema comunicarse con el exterior:
+
 - **Entrada:** ratón, teclado, cámara, micrófono…
 - **Salida:** pantalla, impresora, altavoces…
 
