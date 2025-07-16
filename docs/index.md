@@ -1,6 +1,6 @@
 # Presentación
 
-Bienvenido/a a la asignatura de **Programación, Redes y Sistemas Informáticos I (PRSII)**. 
+Bienvenido/a a la asignatura de **Programación, Redes y Sistemas Informáticos I (PRSII)** del **IES San Vicente**. 
 
 A lo largo de este curso aprenderemos a *programar*, a entender *cómo funciona un ordenador por dentro* y a descubrir cómo se *comunican los dispositivos a través de redes*. Además, crearemos nuestros propios videojuegos utilizando **PyGame Zero**, una herramienta pensada para iniciarse en el desarrollo interactivo de manera sencilla y divertida. Para cerrar el curso, nos iniciaremos en el **desarrollo web**, donde crearemos y daremos estilo a nuestras propias páginas utilizando **HTML y CSS**.
 

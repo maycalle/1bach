@@ -1,39 +1,129 @@
 # 1. Introducción a los sistemas informáticos
 
-Cada vez que usas tu móvil, ordenador o consola, estás interactuando con un sistema informático. No es magia, aunque lo parezca: es el resultado de un trabajo en equipo entre el **hardware** (las piezas físicas del dispositivo) y el **software** (los programas que lo hacen funcionar).
-
-Imagina que el hardware es el cuerpo y el software el cerebro que lo guía. Y, al final, tú eres quien manda: con un simple clic, consigues que millones de ceros y unos trabajen a toda velocidad para mostrarte una foto, abrir un videojuego o reproducir una canción.
-
-En este tema, vamos a descubrir cómo funciona todo esto desde dentro: qué piezas lo forman, cómo trabajan entre sí y por qué cada vez son más rápidas y potentes. Porque entender cómo funcionan las máquinas que usamos a diario es el primer paso para dominar la tecnología.
-
 ## 1.1 ¿Qué es un sistema informático?
 
-Un **sistema informático** es un conjunto de elementos interconectados que trabajan en conjunto para **procesar, almacenar y transmitir información**. Está compuesto por dos partes fundamentales:
+Un **sistema informático** es un conjunto de elementos interconectados que trabajan de forma coordinada para **recibir, procesar, almacenar y transmitir información** de forma automática y eficiente. Su objetivo es realizar tareas que van desde operaciones básicas (como escribir un documento) hasta procesos complejos (como simular un clima o diagnosticar una enfermedad).
 
-* **Hardware:** la parte física del sistema, que incluye todos los componentes electrónicos y mecánicos, desde la CPU hasta los dispositivos de entrada y salida.
-* **Software:** el conjunto de programas e instrucciones que gestionan y controlan el hardware para realizar tareas específicas. El software se divide en:
-  * **Software de sistema:** es el software básico que permite el funcionamiento del equipo. Aquí encontramos los sistemas operativos (como Windows, Linux o macOS), que gestionan los recursos del hardware, controlan los procesos y permiten la interacción entre el usuario y el equipo.
-  * **Software de aplicación:** programas diseñados para realizar tareas concretas y dirigidos al usuario final (por ejemplo, procesadores de texto, navegadores, editores de vídeo o videojuegos).
-  * **Software de desarrollo:** herramientas utilizadas por programadores para crear o modificar otros programas y sistemas (compiladores, entornos de desarrollo como Visual Studio, bibliotecas de código, etc.).
+Está compuesto por:
+- **Hardware:** los componentes físicos del sistema.
+- **Software:** los programas que indican al hardware qué hacer.
+- **Datos:** la información que se introduce, procesa y produce.
 
-### 1.1 Funcionamiento básico
+📌 Nota: los **usuarios** no forman parte del sistema informático como tal, aunque interactúan con él constantemente (por ejemplo, introduciendo datos o interpretando resultados).
 
-Los sistemas informáticos siguen siempre el mismo ciclo:
+✅ Ejemplos de sistemas informáticos:
+- Un *ordenador personal* con sus periféricos y sistema operativo.
+- Un *cajero automático* que procesa transacciones bancarias.
+- Un *smartphone* que ejecuta apps, recibe datos y muestra resultados.
+- Una *impresora multifunción con Wi-Fi y pantalla táctil**, que guarda trabajos en cola y puede recibir archivos desde la nube.
 
-1. **Entrada de datos:** 
-   * Los datos se introducen en el sistema a través de dispositivos de entrada. Estos dispositivos convierten la información del mundo real (textos, imágenes, movimientos, señales, etc.) en señales digitales que el sistema puede interpretar.
-  * Ejemplos: teclado (texto), ratón (movimiento), escáner (imágenes), micrófono (sonido), sensores (temperatura o presión).
-  * Funcionamiento: Cada acción del usuario genera señales eléctricas que son digitalizadas en un formato binario (ceros y unos) por el hardware de entrada y enviadas al sistema para su procesamiento.
-  
-2. **Procesamiento:** la CPU (cerebro del equipo) es la encargada de procesar los datos de entrada.
-3. **Almacenamiento:** los datos se guardan temporal o permanentemente en diferetnes tipos de memoria (RAM, disco duro, SSD...). Es el sistema operativo el que gestiona cuándo y dónde se almacenan estos datos, optimizando el uso de recursos.
-4. **Salida:** una vez procesados, los datos se convierten en información útil y se presentan al usuario a través de dispositivos de salida (pantallas, altavoces, impresoras, etc.). Estos dispositivos transforman los resultados del formato digital a un formato interpretable por el ser humano (imágenes, sonido, texto).
+❌ Ejemplos de sistemas que **NO** se consideran sistemas informáticos:
+- Una *calculadora básica*:	aunque tiene componentes electrónicos, no ejecuta software programable ni guarda datos.
+- Un *reloj digital sencillo*: solo muestra la hora mediante circuitos fijos, sin procesamiento programable.
+- Una *cámara desechable con flash*: usa componentes electrónicos, pero no almacena ni procesa información digital.
 
-Este ciclo de *entrada → procesamiento → almacenamiento → salida* es la clave para entender cómo funcionan los dispositivos que usamos cada día.
+👉 **Criterio clave:** para que algo sea un sistema informático, debe procesar información de forma automatizada mediante hardware, software y datos. Si falta uno de esos elementos, no lo es.
 
-**Ejemplo sencillo**
-Al escribir un documento:
-* Entrada: pulsas las teclas del teclado.
-* Procesamiento: el procesador interpreta las pulsaciones y las muestra en pantalla.
-* Almacenamiento: guardas el archivo en el disco duro o en la nube.
-* Salida: el texto aparece en la pantalla o en una copia impresa si lo imprimes.
+## 1.2 Componentes de un SI: HW y SW
+
+### 1.2.1 Hardware 
+
+El **hardware** es la parte física y tangible del sistema. 
+
+Se divide en:
+- **Unidad central de procesamiento (CPU):** ejecuta instrucciones.
+- **Memoria:** almacena datos temporalmente (RAM, caché).
+- **Almacenamiento secundario:** guarda información de forma persistente (discos duros, SSD, unidades USB).
+- **Periféricos:**
+  - **Entrada:** teclado, ratón, escáner.
+  - **Salida:** pantalla, impresora.
+  - **Mixtos:** pantalla táctil, webcam, unidades de almacenamiento externas.
+
+### 1.2.2 Software
+
+El **software** es el conjunto de instrucciones y programas que controlan el hardware. 
+
+Se clasifica en:
+- **Sistema operativo:** gestiona los recursos del sistema (Windows, Linux, Android, macOS).
+- **Software de aplicación:** permite realizar tareas específicas (navegadores, procesadores de texto, videojuegos).
+- **Software de desarrollo:** herramientas para crear otros programas (editores de código, compiladores, entornos IDE).
+
+📌 **Curiosidad:** hoy en día muchas apps funcionan directamente en la web, sin necesidad de instalar nada (como Google Docs o Canva), gracias al desarrollo del **cloud computing**.
+
+## 1.3 Relación simbiótica entre hardware y software
+
+- El **hardware sin software** no tiene instrucciones que seguir; es como un cuerpo sin cerebro.
+- El **software sin hardware** no puede ejecutarse; necesita un medio físico para funcionar.
+
+Esta **relación simbiótica**  hace que el desarrollo de uno influya directamente en el otro:
+- **Nuevos procesadores** → programas más complejos y potentes.
+- **Nuevos programas** → necesidad de mejorar el hardware para ejecutarlos correctamente.
+
+**Ejemplo:** Para jugar a un viodejuego moderno en resolución 4K se requiere:
+- Una GPU avanzada (hardware) y
+- Un motor gráfico optimizado (software), como *Unreal Engine* o *Unity*.
+
+## 1.4 Arquitectura de Von Neumann
+
+La **arquitectura de Von Neumann** es el modelo sobre el que se basan la mayoría de los ordenadores actuales. Fue propuesta en **1945** por el matemático **John Von Neumann**, y su principal aportación fue organizar todos los componentes del ordenador de forma lógica y funcional.
+
+### 1.4.1 ¿Por qué fue revolucionaria?
+
+Antes, las computadoras se diseñaban para tareas fijas y era necesario modificar físicamente el hardware para cambiar de programa. 
+
+Gracias a la arquitectura de Von Neumann se puede:
+- Cambiar de programa sin cambiar el hardware.
+- Usar un ordenador para múltiples tareas.
+- Tener sistemas más flexibles, programables y potentes.
+
+### 1.4.2 Componentes principales 
+
+#### 1. Unidad Central de Procesamiento (CPU)
+
+La CPU es el **cerebro del sistema**. Su función es **ejecutar instrucciones** paso a paso. Está compuesta por:
+
+- **Unidad de Control (CU):** dirige el tráfico dentro del ordenador. Interpreta las instrucciones y organiza qué componente debe hacer qué, y cuándo.
+- **Unidad Aritmético-Lógica (ALU):** realiza operaciones matemáticas (sumas, restas, comparaciones) y lógicas (como comprobar si algo es verdadero o falso).
+- **Registros:** pequeñas memorias dentro de la CPU donde se almacenan temporalmente los datos que están siendo utilizados en ese momento. Son extremadamente rápidos, pero de muy poca capacidad.
+
+#### 2. Memoria principal (RAM)
+
+La memoria principal es donde se cargan **los programas y datos que la CPU necesita ejecutar en ese momento**. 
+
+Se guarda:
+- El código que el procesador va a ejecutar.
+- Los datos que necesita para trabajar.
+
+Esta es una de las claves de la arquitectura de Von Neumann: **datos e instrucciones en la misma memoria**. Antes de esta idea, se usaban memorias separadas, lo que era mucho más limitado.
+
+💡 Ejemplo: cuando abres un videojuego, su código y la información del jugador (nivel, puntuación, etc.) se cargan en la RAM.
+
+#### 3. Buses
+
+Los buses son **caminos por los que circula la información** dentro del ordenador. Son como autopistas internas. Hay tres tipos principales:
+
+- **Bus de datos:** transporta los datos que se están procesando.
+- **Bus de direcciones:** indica dónde se encuentran los datos o instrucciones dentro de la memoria.
+- **Bus de control:** coordina las señales que activan y desactivan cada componente.
+
+**Analogía:** si un ordenador fuese una ciudad, los buses serían las carreteras que conectan todos los edificios (CPU, memoria, periféricos).
+
+#### 4. Dispositivos de Entrada/Salida (E/S)
+
+Son los componentes que permiten al sistema comunicarse con el exterior:
+- **Entrada:** ratón, teclado, cámara, micrófono…
+- **Salida:** pantalla, impresora, altavoces…
+
+Estos dispositivos **no forman parte del núcleo de la arquitectura**, pero son necesarios para que el sistema informático sea útil para el usuario.
+
+### 1.4.3 Características clave del modelo Von Neumann
+
+| Característica             | Explicación                                                                 |
+|----------------------------|------------------------------------------------------------------------------|
+| Memoria unificada          | Datos e instrucciones se almacenan en el mismo espacio de memoria.          |
+| Ejecución secuencial       | Las instrucciones se ejecutan una tras otra, en orden.                      |
+| Flexibilidad               | Se puede cambiar el programa sin modificar el hardware.                     |
+| Reutilización del hardware | El mismo hardware sirve para ejecutar diferentes programas. 
+
+
+Conocer qué es un sistema informático y cómo están organizados sus componentes es **la base para entender toda la informática moderna**. Desde ordenadores personales hasta dispositivos inteligentes, todos funcionan según estos mismos principios.
