@@ -10,8 +10,6 @@ Está compuesto por:
 - **Software:** los programas que indican al hardware qué hacer.
 - **Datos:** la información que se introduce, procesa y produce.
 
-📌 **Observación:** los usuarios no forman parte del sistema informático como tal, aunque interactúan con él constantemente (por ejemplo, introduciendo datos o interpretando resultados).
-
 **Ejemplos de sistemas informáticos:**
 
 - Un *ordenador personal* con sus periféricos y sistema operativo.
@@ -25,15 +23,13 @@ Está compuesto por:
 - Un *reloj digital sencillo*: solo muestra la hora mediante circuitos fijos, sin procesamiento programable.
 - Una *cámara desechable con flash*: usa componentes electrónicos, pero no almacena ni procesa información digital.
 
-👉 **Criterio clave:** para que algo sea un sistema informático, debe procesar información de forma automatizada mediante hardware, software y datos. Si falta uno de esos elementos, no lo es.
+👉 **RECUERDA:** Para que algo sea un sistema informático, debe procesar información de forma automatizada mediante hardware, software y datos. Si falta uno de esos elementos, no lo es.
 
 ## 1.2 Componentes de un SI
 
 ### 1.2.1 Hardware 
 
-El **hardware** es la parte física y tangible del sistema. 
-
-Se divide en:
+El **hardware** es la parte física y tangible del sistema. Se divide en:
 
 - **Unidad central de procesamiento (CPU):** ejecuta instrucciones.
 - **Memoria:** almacena datos temporalmente (RAM, caché).
@@ -45,27 +41,25 @@ Se divide en:
 
 ### 1.2.2 Software
 
-El **software** es el conjunto de instrucciones y programas que controlan el hardware. 
-
-Se clasifica en:
+El **software** es el conjunto de instrucciones y programas que controlan el hardware. Se clasifica en:
 
 - **Sistema operativo:** gestiona los recursos del sistema (Windows, Linux, Android, macOS).
 - **Software de aplicación:** permite realizar tareas específicas (navegadores, procesadores de texto, videojuegos).
 - **Software de desarrollo:** herramientas para crear otros programas (editores de código, compiladores, entornos IDE).
 
-📌 **Curiosidad:** hoy en día muchas apps funcionan directamente en la web, sin necesidad de instalar nada (como Google Docs o Canva), gracias al desarrollo del **cloud computing**.
+Hoy en día muchas apps funcionan directamente en la web, sin necesidad de instalar nada (como Google Docs o Canva), gracias al desarrollo del **cloud computing**.
 
 ## 1.3 Relación entre hardware y software
 
 - El **hardware sin software** no tiene instrucciones que seguir; es como un cuerpo sin cerebro.
 - El **software sin hardware** no puede ejecutarse; necesita un medio físico para funcionar.
 
-Esta **relación simbiótica**  hace que el desarrollo de uno influya directamente en el otro:
+Esta **relación simbiótica** hace que el desarrollo de uno influya directamente en el otro:
 
 - **Nuevos procesadores** → programas más complejos y potentes.
 - **Nuevos programas** → necesidad de mejorar el hardware para ejecutarlos correctamente.
 
-**Ejemplo:** Para jugar a un viodejuego moderno en resolución 4K se requiere:
+**EJEMPLO:** Para jugar a un viodejuego moderno en resolución 4K se requiere:
 
 - Una GPU avanzada (hardware) y
 - Un motor gráfico optimizado (software), como *Unreal Engine* o *Unity*.
