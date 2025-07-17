@@ -67,17 +67,22 @@ Esta **relación simbiótica** hace que el desarrollo de uno influya directament
 
 ## 1.4 Arquitectura de Von Neumann
 
-La **arquitectura de Von Neumann** es el modelo base de casi todos los ordenadores actuales. Fue propuesta en **1945** por el matemático **John Von Neumann**, y su gran aportación fue organizar todos los componentes del ordenador de forma lógica y funcional, permitiendo así una mayor flexibilidad y facilidad de uso.
+La **arquitectura de Von Neumann** es la base del funcionamiento de casi todos los ordenadores actuales. Fue propuesta en **1945** por el matemático **John Von Neumann**, y su gran aportación fue organizar los componentes del ordenador de forma lógica, estructurada y flexible, permitiendo que una misma máquina pudiera ejecutar distintos programas sin modificar el hardware.
 
 ### 1.4.1 ¿Quién fue John Von Neumann?
 
 **John Von Neumann (1903–1957)** fue un brillante matemático y científico húngaro-estadounidense. Destacó en múltiples campos: matemáticas, física, computación… ¡y hasta colaboró en el desarrollo de la bomba atómica!
 
-En 1945 propuso el modelo que hoy conocemos como **arquitectura de Von Neumann**, una idea revolucionaria: almacenar programas e instrucciones en la misma memoria. Gracias a esto, los ordenadores se volvieron **programables y reutilizables**, algo impensable hasta entonces. Por todo esto, se le considera el **padre de la informática moderna**.
+En **1945**, redactó el documento que sentó las bases de la arquitectura que hoy lleva su nombre. Su idea de almacenar datos e instrucciones en la misma memoria revolucionó la computación y permitió el desarrollo de **ordenadores programables y reutilizables**. Por eso se le considera el **padre de la informática moderna**.
 
-Se dice que Von Neumann tenía una **memoria fuera de lo común**. Podía memorizar libros enteros con solo leerlos una vez. En la universidad, recitaba páginas completas de manuales técnicos palabra por palabra… ¡años después de haberlos leído!
+Además de su enorme talento científico, von Neumann era conocido por su memoria prodigiosa. Se decía que podía memorizar libros enteros tras una sola lectura y resolver cálculos mentales complejísimos desde niño. A los seis años ya dividía números de ocho cifras mentalmente, y en la universidad era capaz de recitar manuales técnicos palabra por palabra años después de haberlos leído.
 
-El físico **Edward Teller**, creador de la bomba de hidrógeno, llegó a decir: *“Sólo hay dos tipos de personas: John von Neumann y el resto de nosotros.”*
+<div style="margin-bottom: 10px" align="center">
+    <img style="border: 1px solid black" src="/docs/img/john_neumann_foto.gif" width="40%">
+    <p><em>John Von Neumann<em></p>
+</div>
+
+El físico **Edward Teller**, creador de la bomba de hidrógeno, llegó a decir de él: *“Sólo hay dos tipos de personas: John von Neumann y el resto de nosotros.”*
 
 ### 1.4.2 ¿Por qué fue una revolución?
 
