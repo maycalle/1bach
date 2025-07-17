@@ -86,7 +86,7 @@ Imagina que cada vez que quisieras cambiar de app en tu móvil tuvieras que abri
 
 Según esta arquitectura, todos los ordenadores modernos comparten una estructura básica que incluye 4 componentes principales:
 
-#### 1. Unidad Central de Procesamiento (CPU)
+**1. Unidad Central de Procesamiento (CPU)**
 
 Es el **cerebro del ordenador**. Ejecuta las instrucciones paso a paso y controla el funcionamiento general. Está formada por:
 
@@ -94,7 +94,7 @@ Es el **cerebro del ordenador**. Ejecuta las instrucciones paso a paso y control
 - **Unidad Aritmético-Lógica** *(ALU, Arithmetic Logic Unit*)*: realiza cálculos y comparaciones.
 - **Registros:** pequeñas memorias ultrarrápidas dentro de la CPU que almacenan datos temporales.
 
-#### 2. Memoria principal (RAM)
+**2. Memoria principal (RAM)**
 
 Es la **zona de trabajo del ordenador**. Aquí se cargan tanto los programas que se están ejecutando como los datos que utilizan.
 
@@ -102,7 +102,7 @@ Y atención, porque aquí está la clave del éxito de esta arquitectura revoluc
 
 💡 Ejemplo: cuando abres un videojuego, su código y los datos de la partida (nivel, puntuación...) se cargan en la RAM.
 
-#### 3. Buses
+**3. Buses**
 
 Son las vías internas por donde viaja la información dentro del ordenador. Como si fueran autopistas que conectan todas las partes del sistema.
 
@@ -110,7 +110,7 @@ Son las vías internas por donde viaja la información dentro del ordenador. Com
 - **Bus de direcciones:** indica de dónde se leen o dónde se escriben los datos.
 - **Bus de control:** envía las órdenes para coordinar los componentes.
 
-#### 4. Dispositivos de Entrada/Salida (E/S)
+**4. Dispositivos de Entrada/Salida (E/S)**
 
 Son los componentes que permiten que el sistema **se comunique con el exterior**: recibir información, mostrar resultados o interactuar con el entorno.
 
@@ -120,7 +120,19 @@ Son los componentes que permiten que el sistema **se comunique con el exterior**
 
 Aunque no forman parte de la arquitectura como tal, son esenciales para que el sistema sea útil y funcional.
 
-### 1.4.3 Características clave del modelo Von Neumann
+### 1.4.3 ¿Quién fue John Von Neumann?
+
+Ahora que conocemos los elementos que componen un ordenador según este modelo, cabe preguntarse: ¿quién fue el genio que lo ideó? Vamos a conocer un poco más John von Neumann…
+
+**John Von Neumann (1903–1957)** fue un brillante matemático y científico húngaro-estadounidense. Destacó en múltiples campos: matemáticas, física, computación… ¡y hasta colaboró en el desarrollo de la bomba atómica!
+
+En 1945 propuso el modelo que hoy conocemos como **arquitectura de Von Neumann**, una idea revolucionaria: almacenar programas e instrucciones en la misma memoria. Gracias a esto, los ordenadores se volvieron **programables y reutilizables**, algo impensable hasta entonces. Por todo esto, se le considera el **padre de la informática moderna**.
+
+Se dice que Von Neumann tenía una **memoria fuera de lo común**. Podía memorizar libros enteros con solo leerlos una vez. En la universidad, recitaba páginas completas de manuales técnicos palabra por palabra… ¡años después de haberlos leído!
+
+El físico **Edward Teller**, creador de la bomba de hidrógeno, llegó a decir: *“Sólo hay dos tipos de personas: John von Neumann y el resto de nosotros.”*
+
+### 1.4.4 Características clave del modelo Von Neumann
 
 | Característica             | Explicación                                                                 |
 |----------------------------|------------------------------------------------------------------------------|
@@ -129,17 +141,6 @@ Aunque no forman parte de la arquitectura como tal, son esenciales para que el s
 | Flexibilidad               | Se puede cambiar el programa sin modificar el hardware.                     |
 | Reutilización del hardware | El mismo hardware sirve para ejecutar diferentes programas. 
 
-
-> ### ¿Quién fue John Von Neumann?
->
-> **John Von Neumann (1903–1957)** fue un brillante matemático y científico húngaro-estadounidense. Destacó en múltiples campos: matemáticas, física, computación… ¡y hasta colaboró en el desarrollo de la bomba atómica!
->
-> En 1945 propuso el modelo que hoy conocemos como **arquitectura de Von Neumann**, una idea revolucionaria: almacenar programas e instrucciones en la misma memoria. Gracias a esto, los ordenadores se volvieron **programables y reutilizables**, algo impensable hasta entonces. Por todo esto, se le considera el **padre de la informática moderna**.
->
-> Se dice que Von Neumann tenía una **memoria fuera de lo común**. Podía memorizar libros enteros con solo leerlos una vez. En la universidad, recitaba páginas completas de manuales técnicos palabra por palabra… ¡años después de haberlos leído!
->
-> El físico **Edward Teller**, creador de la bomba de hidrógeno, llegó a decir: *“Sólo hay dos tipos de personas: John von Neumann y el resto de nosotros.”*
-
 ## 1.5 Resumen 
 
 En esta unidad hemos aprendido qué es un sistema informático y cuáles son sus componentes fundamentales: hardware, software y datos. Un dispositivo solo se considera sistema informático si integra esos tres elementos y procesa información de forma automatizada.
@@ -147,5 +148,3 @@ En esta unidad hemos aprendido qué es un sistema informático y cuáles son sus
 Hemos distinguido ejemplos reales de sistemas informáticos frente a otros que no lo son, como relojes digitales básicos o cámaras desechables. También hemos comprendido la dependencia mutua entre hardware y software, ya que uno no puede funcionar correctamente sin el otro.
 
 Por último, hemos estudiado la arquitectura de Von Neumann, base de la mayoría de los ordenadores actuales. Este modelo organiza el sistema en torno a una CPU, una memoria unificada, buses de comunicación y dispositivos de entrada/salida, permitiendo flexibilidad y reutilización del hardware con solo cambiar el software.
-
-
