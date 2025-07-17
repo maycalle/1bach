@@ -78,7 +78,7 @@ En **1945**, redactó el documento que sentó las bases de la arquitectura que h
 Además de su enorme talento científico, von Neumann era conocido por su memoria prodigiosa. Se decía que podía memorizar libros enteros tras una sola lectura y resolver cálculos mentales complejísimos desde niño. A los seis años ya dividía números de ocho cifras mentalmente, y en la universidad era capaz de recitar manuales técnicos palabra por palabra años después de haberlos leído.
 
 <div style="margin-bottom: 10px" align="center">
-    <img style="border: 2px solid black" src="img/john_neumann_foto.gif" width="30%">
+    <img style="border: 2px solid black; border-radius:25% 10%" src="img/john_neumann_foto.gif" width="30%">
     <p><em>John von Neumann</em></p>
 </div>
 
