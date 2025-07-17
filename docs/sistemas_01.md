@@ -23,7 +23,7 @@ Está compuesto por:
 - Un *reloj digital sencillo*: solo muestra la hora mediante circuitos fijos, sin procesamiento programable.
 - Una *cámara desechable con flash*: usa componentes electrónicos, pero no almacena ni procesa información digital.
 
-👉 **RECUERDA:** Para que algo sea un sistema informático, debe procesar información de forma automatizada mediante hardware, software y datos. Si falta uno de esos elementos, no lo es.
+👉 **RECUERDA:** Un sistema informático es aquel que procesa información de forma automatizada mediante la integración de hardware, software y datos. La ausencia de cualquiera de estos elementos impide su funcionamiento como tal.
 
 ## 1.2 Componentes de un SI
 
@@ -64,11 +64,15 @@ Esta **relación simbiótica** hace que el desarrollo de uno influya directament
 - Una GPU avanzada (hardware) y
 - Un motor gráfico optimizado (software), como *Unreal Engine* o *Unity*.
 
+> **¿Sabes qué es una GPU?**  
+> Una **GPU** o **Unidad de Procesamiento Gráfico** (por sus siglas en inglés: *Graphics Processing Unit*) es un procesador diseñado para trabajar con **gráficos e imágenes**. Funciona como un especialista en gráficos o como un conjunto de mini-cerebros capaces de hacer muchas tareas pequeñas al mismo tiempo, ideal para procesar imágenes y realizar cálculos repetitivos.  
+> A diferencia de la **CPU**, que se encarga de tareas generales y coordina todo el sistema, la GPU está optimizada para hacer **muchos cálculos en paralelo**, lo que la hace muy eficiente en tareas visuales, científicas e incluso en el entrenamiento de **inteligencias artificiales**.
+
 ## 1.4 Arquitectura de Von Neumann
 
-La **arquitectura de Von Neumann** es el modelo sobre el que se basan la mayoría de los ordenadores actuales. Fue propuesta en **1945** por el matemático **John Von Neumann**, y su principal aportación fue organizar todos los componentes del ordenador de forma lógica y funcional.
+La **arquitectura de Von Neumann** es el modelo base de casi todos los ordenadores actuales. Fue propuesta en **1945** por el matemático **John Von Neumann**, y su gran aportación fue organizar todos los componentes del ordenador de forma lógica y funcional, permitiendo así una mayor flexibilidad y facilidad de uso.
 
-### 1.4.1 ¿Por qué fue revolucionaria?
+### 1.4.1 ¿Por qué fue una revolución?
 
 Antes de la arquitectura de Von Neumann, los primeros ordenadores —como el **ENIAC (1945)**— no tenían memoria para almacenar programas. Para que realizaran una nueva tarea, era necesario **reconfigurar físicamente el hardware**, es decir, desconectar y volver a conectar cables, cambiar interruptores y reorganizar módulos. Esto podía llevar horas o incluso días. Era como tener que desmontar y reconstruir una máquina entera cada vez que querías hacer algo diferente.
 
@@ -80,45 +84,41 @@ Imagina que cada vez que quisieras cambiar de app en tu móvil tuvieras que abri
 
 ### 1.4.2 Componentes principales 
 
+Según esta arquitectura, todos los ordenadores modernos comparten una estructura básica que incluye 4 componentes principales:
+
 #### 1. Unidad Central de Procesamiento (CPU)
 
-La CPU es el **cerebro del sistema**. Su función es **ejecutar instrucciones** paso a paso. Está compuesta por:
+Es el **cerebro del ordenador**. Ejecuta las instrucciones paso a paso y controla el funcionamiento general. Está formada por:
 
-- **Unidad de Control (CU):** dirige el tráfico dentro del ordenador. Interpreta las instrucciones y organiza qué componente debe hacer qué, y cuándo.
-- **Unidad Aritmético-Lógica (ALU):** realiza operaciones matemáticas (sumas, restas, comparaciones) y lógicas (como comprobar si algo es verdadero o falso).
-- **Registros:** pequeñas memorias dentro de la CPU donde se almacenan temporalmente los datos que están siendo utilizados en ese momento. Son extremadamente rápidos, pero de muy poca capacidad.
+- **Unidad de Control** *(CU, Control Unity)*: dirige y coordina el funcionamiento del sistema. Indica qué se debe hacer y cuándo.
+- **Unidad Aritmético-Lógica** *(ALU, Arithmetic Logic Unit*)*: realiza cálculos y comparaciones.
+- **Registros:** pequeñas memorias ultrarrápidas dentro de la CPU que almacenan datos temporales.
 
 #### 2. Memoria principal (RAM)
 
-La memoria principal es donde se cargan **los programas y datos que la CPU necesita ejecutar en ese momento**. 
+Es la **zona de trabajo del ordenador**. Aquí se cargan tanto los programas que se están ejecutando como los datos que utilizan.
 
-Se guarda:
+Y atención, porque aquí está la clave del éxito de esta arquitectura revolucionaria: los datos y las instrucciones se almacenan juntos en la misma memoria. Antes de esta idea, se usaban memorias separadas para datos e instrucciones, lo que limitaba mucho su funcionamiento.
 
-- El código que el procesador va a ejecutar.
-- Los datos que necesita para trabajar.
-
-Esta es una de las claves de la arquitectura de Von Neumann: **datos e instrucciones en la misma memoria**. Antes de esta idea, se usaban memorias separadas, lo que era mucho más limitado.
-
-💡 Ejemplo: cuando abres un videojuego, su código y la información del jugador (nivel, puntuación, etc.) se cargan en la RAM.
+💡 Ejemplo: cuando abres un videojuego, su código y los datos de la partida (nivel, puntuación...) se cargan en la RAM.
 
 #### 3. Buses
 
-Los buses son **caminos por los que circula la información** dentro del ordenador. Son como autopistas internas. Hay tres tipos principales:
+Son las vías internas por donde viaja la información dentro del ordenador. Como si fueran autopistas que conectan todas las partes del sistema.
 
-- **Bus de datos:** transporta los datos que se están procesando.
-- **Bus de direcciones:** indica dónde se encuentran los datos o instrucciones dentro de la memoria.
-- **Bus de control:** coordina las señales que activan y desactivan cada componente.
-
-**Analogía:** si un ordenador fuese una ciudad, los buses serían las carreteras que conectan todos los edificios (CPU, memoria, periféricos).
+- **Bus de datos:** lleva los datos.
+- **Bus de direcciones:** indica de dónde se leen o dónde se escriben los datos.
+- **Bus de control:** envía las órdenes para coordinar los componentes.
 
 #### 4. Dispositivos de Entrada/Salida (E/S)
 
-Son los componentes que permiten al sistema comunicarse con el exterior:
+Son los componentes que permiten que el sistema **se comunique con el exterior**: recibir información, mostrar resultados o interactuar con el entorno.
 
-- **Entrada:** ratón, teclado, cámara, micrófono…
-- **Salida:** pantalla, impresora, altavoces…
+- **Entrada:** permiten introducir datos al sistema. Ejemplos: teclado, ratón, micrófono, cámara...
+- **Salida:** muestran o transmiten los resultados del procesamiento. Ejemplos: pantalla, impresora, altavoces...
+- **Mixtos o bidireccionales:** permiten entrada y salida de información. Ejemplos: pantalla táctil, módem, pantalla interactiva, dispositivos de red, memorias USB.
 
-Estos dispositivos **no forman parte del núcleo de la arquitectura**, pero son necesarios para que el sistema informático sea útil para el usuario.
+Aunque no forman parte de la arquitectura como tal, son esenciales para que el sistema sea útil y funcional.
 
 ### 1.4.3 Características clave del modelo Von Neumann
 
@@ -128,6 +128,17 @@ Estos dispositivos **no forman parte del núcleo de la arquitectura**, pero son 
 | Ejecución secuencial       | Las instrucciones se ejecutan una tras otra, en orden.                      |
 | Flexibilidad               | Se puede cambiar el programa sin modificar el hardware.                     |
 | Reutilización del hardware | El mismo hardware sirve para ejecutar diferentes programas. 
+
+
+> ### ¿Quién fue John Von Neumann?
+>
+> **John Von Neumann (1903–1957)** fue un brillante matemático y científico húngaro-estadounidense. Destacó en múltiples campos: matemáticas, física, computación… ¡y hasta colaboró en el desarrollo de la bomba atómica!
+>
+> En 1945 propuso el modelo que hoy conocemos como **arquitectura de Von Neumann**, una idea revolucionaria: almacenar programas e instrucciones en la misma memoria. Gracias a esto, los ordenadores se volvieron **programables y reutilizables**, algo impensable hasta entonces. Por todo esto, se le considera el **padre de la informática moderna**.
+>
+> Se dice que Von Neumann tenía una **memoria fuera de lo común**. Podía memorizar libros enteros con solo leerlos una vez. En la universidad, recitaba páginas completas de manuales técnicos palabra por palabra… ¡años después de haberlos leído!
+>
+> El físico **Edward Teller**, creador de la bomba de hidrógeno, llegó a decir: *“Sólo hay dos tipos de personas: John von Neumann y el resto de nosotros.”*
 
 ## 1.5 Resumen 
 
