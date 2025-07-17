@@ -61,9 +61,11 @@ Esta **relación simbiótica** hace que el desarrollo de uno influya directament
 - Una GPU avanzada (hardware) y
 - Un motor gráfico optimizado (software), como *Unreal Engine* o *Unity*.
 
-> **¿Sabes qué es una GPU?**  
-> Una **GPU** o **Unidad de Procesamiento Gráfico** (por sus siglas en inglés: *Graphics Processing Unit*) es un procesador diseñado para trabajar con **gráficos e imágenes**. Funciona como un especialista en gráficos o como un conjunto de mini-cerebros capaces de hacer muchas tareas pequeñas al mismo tiempo, ideal para procesar imágenes y realizar cálculos repetitivos.  
-> A diferencia de la **CPU**, que se encarga de tareas generales y coordina todo el sistema, la GPU está optimizada para hacer **muchos cálculos en paralelo**, lo que la hace muy eficiente en tareas visuales, científicas e incluso en el entrenamiento de **inteligencias artificiales**.
+!!! tip "¿Sabes qué es una GPU?"
+
+    Una **GPU** o **Unidad de Procesamiento Gráfico** (por sus siglas en inglés: *Graphics Processing Unit*) es un procesador diseñado para trabajar con **gráficos e imágenes**. Funciona como un especialista en gráficos o como un conjunto de mini-cerebros capaces de hacer muchas tareas pequeñas al mismo tiempo, ideal para procesar imágenes y realizar cálculos repetitivos.  
+
+    A diferencia de la **CPU**, que se encarga de tareas generales y coordina todo el sistema, la GPU está optimizada para hacer **muchos cálculos en paralelo**, lo que la hace muy eficiente en tareas visuales, científicas e incluso en el entrenamiento de **inteligencias artificiales**.
 
 ## 1.4 Arquitectura de Von Neumann
 
@@ -78,7 +80,7 @@ En **1945**, redactó el documento que sentó las bases de la arquitectura que h
 Además de su enorme talento científico, von Neumann era conocido por su memoria prodigiosa. Se decía que podía memorizar libros enteros tras una sola lectura y resolver cálculos mentales complejísimos desde niño. A los seis años ya dividía números de ocho cifras mentalmente, y en la universidad era capaz de recitar manuales técnicos palabra por palabra años después de haberlos leído.
 
 <div style="margin-bottom: 10px" align="center">
-    <img style="border: 2px solid black; border-radius:25% 10%" src="img/john_neumann_foto.gif" width="30%">
+    <img style="border: 2px solid black; border-radius:25% 10%; box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);" src="img/john_neumann_foto.gif" width="30%">
     <p><em>John von Neumann</em></p>
 </div>
 
@@ -137,7 +139,7 @@ Aunque no forman parte de la arquitectura como tal, son esenciales para que el s
 ### 1.4.4 Características clave del modelo Von Neumann
 
 | Característica             | Explicación                                                                 |
-|----------------------------|------------------------------------------------------------------------------|
+|----------------------------|-----------------------------------------------------------------------------|
 | Memoria unificada          | Datos e instrucciones se almacenan en el mismo espacio de memoria.          |
 | Ejecución secuencial       | Las instrucciones se ejecutan una tras otra, en orden.                      |
 | Flexibilidad               | Se puede cambiar el programa sin modificar el hardware.                     |
@@ -149,7 +151,5 @@ En esta unidad hemos aprendido:
 
 - Qué es un sistema informático y cuáles son sus componentes: hardware, software y datos.
 - La relación entre hardware y software, y su interdependencia.
-- La importancia de la arquitectura de Von Neumann como base de los ordenadores modernos.
-
-Este modelo permitió transformar los ordenadores en máquinas universales: con solo cambiar el software, podían realizar cualquier tarea, sin modificar el hardware.
+- La importancia de la arquitectura de Von Neumann como base de los ordenadores modernos. Este modelo permitió transformar los ordenadores en máquinas universales: con solo cambiar el software, podían realizar cualquier tarea, sin modificar el hardware.
 
