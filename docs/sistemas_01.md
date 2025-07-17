@@ -76,14 +76,30 @@ La **arquitectura de Von Neumann** es la base del funcionamiento de casi todos l
 
 En **1945**, redactó el documento que sentó las bases de la arquitectura que hoy lleva su nombre. Su idea de almacenar datos e instrucciones en la misma memoria revolucionó la computación y permitió el desarrollo de **ordenadores programables y reutilizables**. Por eso se le considera el **padre de la informática moderna**.
 
+
 Además de su enorme talento científico, von Neumann era conocido por su memoria prodigiosa. Se decía que podía memorizar libros enteros tras una sola lectura y resolver cálculos mentales complejísimos desde niño. A los seis años ya dividía números de ocho cifras mentalmente, y en la universidad era capaz de recitar manuales técnicos palabra por palabra años después de haberlos leído.
 
-<div style="margin-bottom: 10px" align="center">
-    <img style="border: 2px solid black; border-radius:25% 10%; box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);" src="img/john_neumann_foto.gif" width="40%">
-    <p><em>John von Neumann</em></p>
-    <img style="border: 2px solid black; border-radius:25% 10%; box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);" src="img/john_neumann_ias_machine.jpg" width="40%">
-    <p><em>De izquierda a derecha: Julian Bigelow, Herman Goldstine, J. Robert Oppenheimer y John von Neumann frente a la IAS Machine, , uno de los primeros ordenadores con programa almacenado, en el Instituto de Estudios Avanzados de Princeton.</em></p>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-bottom: 20px;">
+
+  <figure style="flex: 1 1 300px; max-width: 400px; text-align: center;">
+    <img 
+      src="img/john_neumann_foto.gif" 
+      style="height: 300px; width: 100%; object-fit: cover; border: 2px solid black; border-radius: 25% 10%; box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);">
+    <figcaption><em>John von Neumann</em></figcaption>
+  </figure>
+
+  <figure style="flex: 1 1 300px; max-width: 400px; text-align: center;">
+    <img 
+      src="img/john_neumann_ias_machine.jpg" 
+      style="height: 300px; width: 100%; object-fit: cover; border: 2px solid black; border-radius: 25% 10%; box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);">
+    <figcaption>
+      <em>De izquierda a derecha: Bigelow, Goldstine, Oppenheimer y von Neumann frente a la IAS Machine.</em>
+    </figcaption>
+  </figure>
+
 </div>
+
+La **IAS Machine** fue uno de los primeros ordenadores con programa almacenado, diseñada en el **Instituto de Estudios Avanzados de Princeton** bajo la dirección de **John von Neumann**.
 
 En sus últimos años, von Neumann padeció un cáncer muy agresivo. Falleció en 1957 a los 53 años, pero hasta sus últimos días siguió resolviendo problemas matemáticos y compartiendo ideas.
 
