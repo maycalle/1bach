@@ -56,10 +56,9 @@ Esta **relación simbiótica** hace que el desarrollo de uno influya directament
 - **Nuevos procesadores** → programas más complejos y potentes.
 - **Nuevos programas** → necesidad de mejorar el hardware para ejecutarlos correctamente.
 
-**EJEMPLO:** Para jugar a un viodejuego moderno en resolución 4K se requiere:
+!!! example EJEMPLO 
 
-- Una GPU avanzada (hardware) y
-- Un motor gráfico optimizado (software), como *Unreal Engine* o *Unity*.
+    Para jugar a un viodejuego moderno en resolución 4K se requiere: una GPU avanzada (hardware) y un motor gráfico optimizado (software), como *Unreal Engine* o *Unity*.
 
 !!! tip "¿Sabes qué es una GPU?"
 
@@ -116,7 +115,9 @@ Es la **zona de trabajo del ordenador**. Aquí se cargan tanto los programas que
 
 Y atención, porque aquí está la clave del éxito de esta arquitectura revolucionaria: los datos y las instrucciones se almacenan juntos en la misma memoria. Antes de esta idea, se usaban memorias separadas para datos e instrucciones, lo que limitaba mucho su funcionamiento.
 
-💡 Ejemplo: cuando abres un videojuego, su código y los datos de la partida (nivel, puntuación...) se cargan en la RAM.
+!!! example EJEMPLO 
+    
+    Cuando abres un videojuego, su código y los datos de la partida (nivel, puntuación...) se cargan en la RAM.
 
 **3. Buses**
 
