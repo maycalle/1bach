@@ -102,8 +102,8 @@ Imagina que cada vez que quisieras cambiar de app en tu móvil tuvieras que abri
 Según esta arquitectura, todos los ordenadores modernos comparten una estructura básica que incluye 4 componentes principales.
 
 <div style="margin-bottom: 10px" align="center">
-    <img style="border: 2px solid black; border-radius:25% 10%; box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);" src="img/arquitectura_von_neumann.png" width="30%">
-    <p><em>John von Neumann</em></p>
+    <img style="border: 2px solid black; border-radius: 10%; box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);" src="img/arquitectura_von_neumann.png" width="50%">
+    <p><em>Arquitectura Von Neumann</em></p>
 </div>
 
 **1. Unidad Central de Procesamiento (CPU)**
