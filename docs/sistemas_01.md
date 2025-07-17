@@ -67,20 +67,22 @@ Esta **relación simbiótica** hace que el desarrollo de uno influya directament
 
 ## 1.4 Arquitectura de Von Neumann
 
-La **arquitectura de Von Neumann** es la base del funcionamiento de casi todos los ordenadores actuales. Fue propuesta en **1945** por el matemático **John Von Neumann**, y su gran aportación fue organizar los componentes del ordenador de forma lógica, estructurada y flexible, permitiendo que una misma máquina pudiera ejecutar distintos programas sin modificar el hardware.
+La **arquitectura de Von Neumann** es la base del funcionamiento de casi todos los ordenadores actuales. Fue propuesta en **1945** por el matemático **John von Neumann**, y su gran aportación fue organizar los componentes del ordenador de forma lógica, estructurada y flexible, permitiendo que una misma máquina pudiera ejecutar distintos programas sin modificar el hardware.
 
-### 1.4.1 ¿Quién fue John Von Neumann?
+### 1.4.1 ¿Quién fue John von Neumann?
 
-**John Von Neumann (1903–1957)** fue un brillante matemático y científico húngaro-estadounidense. Destacó en múltiples campos: matemáticas, física, computación… ¡y hasta colaboró en el desarrollo de la bomba atómica!
+**John von Neumann (1903–1957)** fue un brillante matemático y científico húngaro-estadounidense. Destacó en múltiples campos: matemáticas, física, computación… ¡y hasta colaboró en el desarrollo de la bomba atómica!
 
 En **1945**, redactó el documento que sentó las bases de la arquitectura que hoy lleva su nombre. Su idea de almacenar datos e instrucciones en la misma memoria revolucionó la computación y permitió el desarrollo de **ordenadores programables y reutilizables**. Por eso se le considera el **padre de la informática moderna**.
 
 Además de su enorme talento científico, von Neumann era conocido por su memoria prodigiosa. Se decía que podía memorizar libros enteros tras una sola lectura y resolver cálculos mentales complejísimos desde niño. A los seis años ya dividía números de ocho cifras mentalmente, y en la universidad era capaz de recitar manuales técnicos palabra por palabra años después de haberlos leído.
 
 <div style="margin-bottom: 10px" align="center">
-    <img style="border: 1px solid black" src="/docs/img/john_neumann_foto.gif" width="40%">
-    <p><em>John Von Neumann<em></p>
+    <img style="border: 1px solid black" src="/1bach/docs/img/john_neumann_foto.gif" width="40%">
+    <p><em>John von Neumann</em></p>
 </div>
+
+En sus últimos años, von Neumann padeció un cáncer muy agresivo. Falleció en 1957 a los 53 años, pero hasta sus últimos días siguió resolviendo problemas matemáticos y compartiendo ideas.
 
 El físico **Edward Teller**, creador de la bomba de hidrógeno, llegó a decir de él: *“Sólo hay dos tipos de personas: John von Neumann y el resto de nosotros.”*
 
