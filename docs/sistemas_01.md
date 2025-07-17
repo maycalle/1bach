@@ -56,15 +56,15 @@ Esta **relación simbiótica** hace que el desarrollo de uno influya directament
 - **Nuevos procesadores** → programas más complejos y potentes.
 - **Nuevos programas** → necesidad de mejorar el hardware para ejecutarlos correctamente.
 
-!!! example EJEMPLO 
+!!! example "EJEMPLO" 
 
-    Para jugar a un viodejuego moderno en resolución 4K se requiere: una GPU avanzada (hardware) y un motor gráfico optimizado (software), como *Unreal Engine* o *Unity*.
+    Para jugar a un viodejuego moderno en resolución 4K se requiere: una **GPU avanzada** (hardware) y un **motor gráfico optimizado** (software), como *Unreal Engine* o *Unity*.
 
-!!! tip "¿Sabes qué es una GPU?"
+    !!! tip "¿Sabes qué es una GPU?"
 
-    Una **GPU** o **Unidad de Procesamiento Gráfico** (por sus siglas en inglés: *Graphics Processing Unit*) es un procesador diseñado para trabajar con **gráficos e imágenes**. Funciona como un especialista en gráficos o como un conjunto de mini-cerebros capaces de hacer muchas tareas pequeñas al mismo tiempo, ideal para procesar imágenes y realizar cálculos repetitivos.  
+        Una **GPU** o **Unidad de Procesamiento Gráfico** (por sus siglas en inglés: *Graphics Processing Unit*) es un procesador diseñado para trabajar con **gráficos e imágenes**. Funciona como un especialista en gráficos o como un conjunto de mini-cerebros capaces de hacer muchas tareas pequeñas al mismo tiempo, ideal para procesar imágenes y realizar cálculos repetitivos.  
 
-    A diferencia de la **CPU**, que se encarga de tareas generales y coordina todo el sistema, la GPU está optimizada para hacer **muchos cálculos en paralelo**, lo que la hace muy eficiente en tareas visuales, científicas e incluso en el entrenamiento de **inteligencias artificiales**.
+        A diferencia de la **CPU**, que se encarga de tareas generales y coordina todo el sistema, la GPU está optimizada para hacer **muchos cálculos en paralelo**, lo que la hace muy eficiente en tareas visuales, científicas e incluso en el entrenamiento de **inteligencias artificiales**.
 
 ## 1.4 Arquitectura de Von Neumann
 
@@ -99,7 +99,12 @@ Imagina que cada vez que quisieras cambiar de app en tu móvil tuvieras que abri
 
 ### 1.4.3 Componentes principales 
 
-Según esta arquitectura, todos los ordenadores modernos comparten una estructura básica que incluye 4 componentes principales:
+Según esta arquitectura, todos los ordenadores modernos comparten una estructura básica que incluye 4 componentes principales.
+
+<div style="margin-bottom: 10px" align="center">
+    <img style="border: 2px solid black; border-radius:25% 10%; box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);" src="img/arquitectura_von_neumann.png" width="30%">
+    <p><em>John von Neumann</em></p>
+</div>
 
 **1. Unidad Central de Procesamiento (CPU)**
 
@@ -115,7 +120,7 @@ Es la **zona de trabajo del ordenador**. Aquí se cargan tanto los programas que
 
 Y atención, porque aquí está la clave del éxito de esta arquitectura revolucionaria: los datos y las instrucciones se almacenan juntos en la misma memoria. Antes de esta idea, se usaban memorias separadas para datos e instrucciones, lo que limitaba mucho su funcionamiento.
 
-!!! example EJEMPLO 
+!!! example "EJEMPLO" 
     
     Cuando abres un videojuego, su código y los datos de la partida (nivel, puntuación...) se cargan en la RAM.
 
