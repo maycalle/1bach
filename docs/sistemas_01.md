@@ -34,10 +34,7 @@ El **hardware** es la parte física y tangible del sistema. Se divide en:
 - **Unidad central de procesamiento (CPU):** ejecuta instrucciones.
 - **Memoria:** almacena datos temporalmente (RAM, caché).
 - **Almacenamiento secundario:** guarda información de forma persistente (discos duros, SSD, unidades USB).
-- **Periféricos:**
-    - **Entrada:** teclado, ratón, escáner.
-    - **Salida:** pantalla, impresora.
-    - **Mixtos:** pantalla táctil, webcam, unidades de almacenamiento externas.
+- **Periféricos:** son dispositivos que permiten la comunicación con el usuario.     
 
 ### 1.2.2 Software
 
@@ -72,7 +69,17 @@ Esta **relación simbiótica** hace que el desarrollo de uno influya directament
 
 La **arquitectura de Von Neumann** es el modelo base de casi todos los ordenadores actuales. Fue propuesta en **1945** por el matemático **John Von Neumann**, y su gran aportación fue organizar todos los componentes del ordenador de forma lógica y funcional, permitiendo así una mayor flexibilidad y facilidad de uso.
 
-### 1.4.1 ¿Por qué fue una revolución?
+### 1.4.1 ¿Quién fue John Von Neumann?
+
+**John Von Neumann (1903–1957)** fue un brillante matemático y científico húngaro-estadounidense. Destacó en múltiples campos: matemáticas, física, computación… ¡y hasta colaboró en el desarrollo de la bomba atómica!
+
+En 1945 propuso el modelo que hoy conocemos como **arquitectura de Von Neumann**, una idea revolucionaria: almacenar programas e instrucciones en la misma memoria. Gracias a esto, los ordenadores se volvieron **programables y reutilizables**, algo impensable hasta entonces. Por todo esto, se le considera el **padre de la informática moderna**.
+
+Se dice que Von Neumann tenía una **memoria fuera de lo común**. Podía memorizar libros enteros con solo leerlos una vez. En la universidad, recitaba páginas completas de manuales técnicos palabra por palabra… ¡años después de haberlos leído!
+
+El físico **Edward Teller**, creador de la bomba de hidrógeno, llegó a decir: *“Sólo hay dos tipos de personas: John von Neumann y el resto de nosotros.”*
+
+### 1.4.2 ¿Por qué fue una revolución?
 
 Antes de la arquitectura de Von Neumann, los primeros ordenadores —como el **ENIAC (1945)**— no tenían memoria para almacenar programas. Para que realizaran una nueva tarea, era necesario **reconfigurar físicamente el hardware**, es decir, desconectar y volver a conectar cables, cambiar interruptores y reorganizar módulos. Esto podía llevar horas o incluso días. Era como tener que desmontar y reconstruir una máquina entera cada vez que querías hacer algo diferente.
 
@@ -82,7 +89,7 @@ Hoy en día, esta idea es tan normal que parece obvia. Podemos abrir una app, ce
 
 Imagina que cada vez que quisieras cambiar de app en tu móvil tuvieras que abrirlo, soldar cables y volver a ensamblarlo. Esa era, en esencia, la informática antes de Von Neumann.
 
-### 1.4.2 Componentes principales 
+### 1.4.3 Componentes principales 
 
 Según esta arquitectura, todos los ordenadores modernos comparten una estructura básica que incluye 4 componentes principales:
 
@@ -120,18 +127,6 @@ Son los componentes que permiten que el sistema **se comunique con el exterior**
 
 Aunque no forman parte de la arquitectura como tal, son esenciales para que el sistema sea útil y funcional.
 
-### 1.4.3 ¿Quién fue John Von Neumann?
-
-Ahora que conocemos los elementos que componen un ordenador según este modelo, cabe preguntarse: ¿quién fue el genio que lo ideó? Vamos a conocer un poco más John von Neumann…
-
-**John Von Neumann (1903–1957)** fue un brillante matemático y científico húngaro-estadounidense. Destacó en múltiples campos: matemáticas, física, computación… ¡y hasta colaboró en el desarrollo de la bomba atómica!
-
-En 1945 propuso el modelo que hoy conocemos como **arquitectura de Von Neumann**, una idea revolucionaria: almacenar programas e instrucciones en la misma memoria. Gracias a esto, los ordenadores se volvieron **programables y reutilizables**, algo impensable hasta entonces. Por todo esto, se le considera el **padre de la informática moderna**.
-
-Se dice que Von Neumann tenía una **memoria fuera de lo común**. Podía memorizar libros enteros con solo leerlos una vez. En la universidad, recitaba páginas completas de manuales técnicos palabra por palabra… ¡años después de haberlos leído!
-
-El físico **Edward Teller**, creador de la bomba de hidrógeno, llegó a decir: *“Sólo hay dos tipos de personas: John von Neumann y el resto de nosotros.”*
-
 ### 1.4.4 Características clave del modelo Von Neumann
 
 | Característica             | Explicación                                                                 |
@@ -143,8 +138,11 @@ El físico **Edward Teller**, creador de la bomba de hidrógeno, llegó a decir:
 
 ## 1.5 Resumen 
 
-En esta unidad hemos aprendido qué es un sistema informático y cuáles son sus componentes fundamentales: hardware, software y datos. Un dispositivo solo se considera sistema informático si integra esos tres elementos y procesa información de forma automatizada.
+En esta unidad hemos aprendido:
 
-Hemos distinguido ejemplos reales de sistemas informáticos frente a otros que no lo son, como relojes digitales básicos o cámaras desechables. También hemos comprendido la dependencia mutua entre hardware y software, ya que uno no puede funcionar correctamente sin el otro.
+- Qué es un sistema informático y cuáles son sus componentes: hardware, software y datos.
+- La relación entre hardware y software, y su interdependencia.
+- La importancia de la arquitectura de Von Neumann como base de los ordenadores modernos.
 
-Por último, hemos estudiado la arquitectura de Von Neumann, base de la mayoría de los ordenadores actuales. Este modelo organiza el sistema en torno a una CPU, una memoria unificada, buses de comunicación y dispositivos de entrada/salida, permitiendo flexibilidad y reutilización del hardware con solo cambiar el software.
+Este modelo permitió transformar los ordenadores en máquinas universales: con solo cambiar el software, podían realizar cualquier tarea, sin modificar el hardware.
+
